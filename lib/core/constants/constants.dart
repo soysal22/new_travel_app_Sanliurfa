@@ -12,7 +12,7 @@ class Constants {
 
   /// Home
 
-  //  TANITIM
+  ///  TANITIM
 
   //  static const String tanitimImageHalfeti ="assets/images/tanitim/";
 
@@ -28,6 +28,37 @@ class Constants {
       "assets/images/tanitim/gumruk.webp";
   static const String tanitimImageBalikligol =
       "assets/images/tanitim/balikligol.jpg";
+
+  /// Travels
+
+  // Kliseler
+  //Germuş
+  static const String clicheImageGermus =
+      "assets/images/travels/kliseler/germus/germus.jpg";
+  static const String clicheImageGermusFront =
+      "assets/images/travels/kliseler/germus/front.jpg";
+  static const String clicheImageGermusIci =
+      "assets/images/travels/kliseler/germus/ici.jpg";
+  static const String clicheImageGermusYan =
+      "assets/images/travels/kliseler/germus/yan.jpg";
+
+  // Reji Klisesi
+  static const String clicheImageReji =
+      "assets/images/travels/kliseler/reji/garden.jpg";
+  static const String clicheImageRejiFront =
+      "assets/images/travels/kliseler/reji/front.jpg";
+  static const String clicheImageRejiIn =
+      "assets/images/travels/kliseler/reji/in.jpg";
+  static const String clicheImageRejiOn =
+      "assets/images/travels/kliseler/reji/on.jpg";
+
+  // Yakup Manastırı
+  static const String clicheImageYakup =
+      "assets/images/travels/kliseler/yakup_manastiri/front.jpg";
+  static const String clicheImageYakupCastle =
+      "assets/images/travels/kliseler/yakup_manastiri/castle.jpg";
+  static const String clicheImageYakupOn =
+      "assets/images/travels/kliseler/yakup_manastiri/on.jpg";
 
   /// TEXTS
 

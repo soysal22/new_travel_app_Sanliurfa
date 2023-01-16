@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
+import 'package:gezi_app/core/widgets/responsive_card.dart';
+import 'package:gezi_app/views/tabbarView/klise.dart';
 
 class TravelPage extends StatefulWidget {
   const TravelPage({super.key});
@@ -39,7 +41,6 @@ class _TravelPageState extends State<TravelPage> with TickerProviderStateMixin {
           children: [
             Constants.sizedBoxHeigh20,
             _tabbarDesign(),
-            Constants.sizedBoxHeigh20,
             Expanded(
                 child: Padding(
               padding: EdgeInsets.only(top: _topPadding),
@@ -47,12 +48,13 @@ class _TravelPageState extends State<TravelPage> with TickerProviderStateMixin {
                 physics: const NeverScrollableScrollPhysics(),
                 controller: tabController,
                 children: [
+                  // Tarihi Yerler
                   Padding(
                     padding: const EdgeInsets.all(10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Tarihi Yerler"),
+                        const Text("Tarihi Yerler"),
                         Constants.sizedBoxHeigh20,
                         Stack(
                           children: [
@@ -117,12 +119,36 @@ class _TravelPageState extends State<TravelPage> with TickerProviderStateMixin {
                       ],
                     ),
                   ),
-                  Center(child: Text("Müze")),
-                  Center(child: Text("Camiler")),
-                  Center(child: Text("Kliseler")),
-                  Center(child: Text("Hanlar")),
-                  Center(child: Text("Meydanlar")),
-                  Center(child: Text("Tarihi Yerler")),
+
+                  // Müzeler
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10, right: 10),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Müzeler",
+                          style: Theme.of(context).textTheme.headline6,
+                        ),
+                        Constants.sizedBoxHeigh20,
+                      ],
+                    ),
+                  ),
+
+                  //Camiler
+                  const Center(child: Text("Camiler")),
+
+                  // Kliseler
+                  const Klise(),
+
+                  // Hanlar
+                  const Center(child: Text("Hanlar")),
+
+                  //Meydanlar
+                  const Center(child: Text("Meydanlar")),
+
+                  // Konaklar
+                  const Center(child: Text("Konaklar")),
                 ],
               ),
             ))
@@ -134,6 +160,7 @@ class _TravelPageState extends State<TravelPage> with TickerProviderStateMixin {
 
   AppBar _appbarDesign() {
     return AppBar(
+      elevation: 0,
       automaticallyImplyLeading: false,
       centerTitle: true,
       title: const Text("Gezilecek Yerler"),
