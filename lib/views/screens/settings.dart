@@ -9,6 +9,8 @@ class SettingsPage extends StatelessWidget {
       extendBody: true,
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        centerTitle: true,
+        title: Text("Settings Page "),
       ),
       body: const Center(child: Text("Welcome To Settings Page ")),
     );

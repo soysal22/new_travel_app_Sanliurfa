@@ -43,7 +43,7 @@ class _BottomBarNewPageViewState extends State<BottomBarNewPageView> {
       ),
       PersistentBottomNavBarItem(
         textStyle: const TextStyle(fontSize: 20),
-        icon: const Icon(CupertinoIcons.battery_0),
+        icon: const Icon(Icons.food_bank_outlined),
         title: ("Yemekler"),
         //activeColorPrimary: CupertinoColors.activeBlue,
         activeColorSecondary: CupertinoColors.white,

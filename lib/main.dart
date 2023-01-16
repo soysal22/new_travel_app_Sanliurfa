@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gezi_app/views/deneme/demo_indicator.dart';
 import 'package:gezi_app/views/package_bottombar.dart';
+import 'package:gezi_app/views/screens/travel.dart';
 
 void main() {
   runApp(const MyApp());

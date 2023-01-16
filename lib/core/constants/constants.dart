@@ -53,6 +53,9 @@ class Constants {
   static const SizedBox sizedBoxWidth10 = SizedBox(width: 10);
   static const SizedBox sizedBoxWidth20 = SizedBox(width: 20);
 
+  /// Circular
+  static BorderRadius borderRadius20 = BorderRadius.circular(20);
+
   // Padding
   static const EdgeInsets edgeInsetsAll10 = EdgeInsets.all(10);
 

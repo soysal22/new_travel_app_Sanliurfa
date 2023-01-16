@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/info_title_text.dart';
 import 'package:gezi_app/core/widgets/info_subtitle_text.dart';
-import 'package:gezi_app/views/deneme/bottombar_page.dart';
 import 'package:gezi_app/views/package_bottombar.dart';
 
 class Info extends StatefulWidget {
