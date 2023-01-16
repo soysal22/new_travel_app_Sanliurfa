@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/info_title_text.dart';
 import 'package:gezi_app/core/widgets/info_subtitle_text.dart';
-import 'package:gezi_app/views/bottombar_page.dart';
+import 'package:gezi_app/views/deneme/bottombar_page.dart';
+import 'package:gezi_app/views/package_bottombar.dart';
 
 class Info extends StatefulWidget {
   const Info({super.key});
@@ -64,14 +65,6 @@ class _InfoState extends State<Info> {
                   text: infoSubtitle[pageLength],
                   size: 21,
                 ),
-                // SizedBox(
-                //   width: 300,
-                //   child: InfoSubtitleText(
-                //     text: infoDetailText[pageLength],
-                //     renk: Colors.red,
-                //     size: 16,
-                //   ),
-                // ),
                 if (pageLength + 1 == pageImageList.length)
                   _navigatorButton(context)
               ],
@@ -96,7 +89,7 @@ class _InfoState extends State<Info> {
           Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                  builder: (context) => const BottomBarPageView()));
+                  builder: (context) => const BottomBarNewPageView()));
         },
         child: const Icon(
           Icons.arrow_right_alt_outlined,

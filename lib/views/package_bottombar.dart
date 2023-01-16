@@ -6,11 +6,11 @@ import 'package:gezi_app/views/screens/tanitim.dart';
 import 'package:gezi_app/views/screens/travel.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
-class NewBottom extends StatefulWidget {
-  const NewBottom({super.key});
+class BottomBarNewPageView extends StatefulWidget {
+  const BottomBarNewPageView({super.key});
 
   @override
-  State<NewBottom> createState() => _NewBottomState();
+  State<BottomBarNewPageView> createState() => _BottomBarNewPageViewState();
 }
 // navigation bardaki ekranların listesi
 
@@ -20,7 +20,7 @@ List<Widget> _buildScreens() {
 
 PersistentTabController? controller = PersistentTabController(initialIndex: 0);
 
-class _NewBottomState extends State<NewBottom> {
+class _BottomBarNewPageViewState extends State<BottomBarNewPageView> {
   // navigation bardaki itemların listesi
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
@@ -35,7 +35,8 @@ class _NewBottomState extends State<NewBottom> {
       PersistentBottomNavBarItem(
         textStyle: const TextStyle(fontSize: 20),
         icon: const Icon(CupertinoIcons.map),
-        title: ("Gezilecek \nYerler"),
+        title: ("Gezilecek \n  Yerler"),
+        contentPadding: 0,
         //activeColorPrimary: CupertinoColors.activeBlue,
         activeColorSecondary: CupertinoColors.white,
         inactiveColorPrimary: CupertinoColors.systemGrey,

@@ -28,6 +28,7 @@ class _MyWidgetState extends State<BottomBarPageView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: null,
+      extendBody: true,
       body: bodyPageList.elementAt(selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
           onTap: (int index) {

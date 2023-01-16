@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/views/deneme/demo_indicator.dart';
+import 'package:gezi_app/views/package_bottombar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const DemoIndiicator(),
+      home: const BottomBarNewPageView(),
     );
   }
 }

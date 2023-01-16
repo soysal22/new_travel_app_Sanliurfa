@@ -10,10 +10,12 @@ class Constants {
       "assets/images/info/gobeklitepe.jpeg";
   static const String infoImageHalfeti = "assets/images/info/halfeti.jpg";
 
-// Home
+  /// Home
 
   //  TANITIM
+
   //  static const String tanitimImageHalfeti ="assets/images/tanitim/";
+
   static const String tanitimImageSanliurfa =
       "assets/images/tanitim/sanliurfa_tanitim.jpg";
   static const String tanitimImageHalfeti = "assets/images/tanitim/halfeti.jpg";
@@ -26,6 +28,11 @@ class Constants {
       "assets/images/tanitim/gumruk.webp";
   static const String tanitimImageBalikligol =
       "assets/images/tanitim/balikligol.jpg";
+
+  /// TEXTS
+
+  // TANITIM
+  static const String textSanliurfa = "ŞANLIURFA";
 
 //  Colors
   static const Color colorBlack = Colors.black;

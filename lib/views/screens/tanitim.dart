@@ -35,6 +35,7 @@ class _TanitimPageState extends State<TanitimPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      extendBody: true,
       appBar: _appbarDesign(),
       body: Padding(
         padding: const EdgeInsets.only(top: 20),
@@ -45,6 +46,19 @@ class _TanitimPageState extends State<TanitimPage> {
             _imageCarouselSlider(),
             // circles sayfa page selectorları buradan ayarlıyoruz
             _pageSelector(context),
+
+            Constants.sizedBoxHeigh20,
+            Text(Constants.textSanliurfa,
+                style: Theme.of(context).textTheme.headline4?.copyWith(
+                    fontSize: 30,
+                    color: Constants.colorBlack,
+                    fontWeight: FontWeight.bold)),
+            Constants.sizedBoxHeigh20,
+            Text("Açıklama  \n\nama ne yazağımı bilmiyorum ",
+                style: Theme.of(context).textTheme.headline4?.copyWith(
+                    fontSize: 30,
+                    color: Constants.colorBlack,
+                    fontWeight: FontWeight.bold)),
           ],
         ),
       ),
