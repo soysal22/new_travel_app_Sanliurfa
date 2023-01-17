@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
-import 'package:gezi_app/views/tabbarView/klise.dart';
+import 'package:gezi_app/views/tabbarViewScreens/klise.dart';
 
 class TravelPage extends StatefulWidget {
   const TravelPage({super.key});
