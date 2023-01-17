@@ -30,7 +30,7 @@ class _BottomBarNewPageViewState extends State<BottomBarNewPageView> {
         title: ("Tanıtım"),
         // activeColorPrimary: CupertinoColors.systemRed,
         activeColorSecondary: CupertinoColors.white,
-        inactiveColorPrimary: CupertinoColors.systemGrey,
+        inactiveColorPrimary: CupertinoColors.activeBlue,
       ),
       PersistentBottomNavBarItem(
         textStyle: const TextStyle(fontSize: 20),
@@ -39,7 +39,7 @@ class _BottomBarNewPageViewState extends State<BottomBarNewPageView> {
         contentPadding: 0,
         //activeColorPrimary: CupertinoColors.activeBlue,
         activeColorSecondary: CupertinoColors.white,
-        inactiveColorPrimary: CupertinoColors.systemGrey,
+        inactiveColorPrimary: CupertinoColors.activeBlue,
       ),
       PersistentBottomNavBarItem(
         textStyle: const TextStyle(fontSize: 20),
@@ -47,7 +47,7 @@ class _BottomBarNewPageViewState extends State<BottomBarNewPageView> {
         title: ("Yemekler"),
         //activeColorPrimary: CupertinoColors.activeBlue,
         activeColorSecondary: CupertinoColors.white,
-        inactiveColorPrimary: CupertinoColors.systemGrey,
+        inactiveColorPrimary: CupertinoColors.activeBlue,
       ),
       PersistentBottomNavBarItem(
         textStyle: const TextStyle(fontSize: 20),
@@ -55,7 +55,7 @@ class _BottomBarNewPageViewState extends State<BottomBarNewPageView> {
         title: ("Settings"),
         //activeColorPrimary: CupertinoColors.activeBlue,
         activeColorSecondary: CupertinoColors.white,
-        inactiveColorPrimary: CupertinoColors.systemGrey,
+        inactiveColorPrimary: CupertinoColors.activeBlue,
       ),
     ];
   }
@@ -69,9 +69,9 @@ class _BottomBarNewPageViewState extends State<BottomBarNewPageView> {
         controller: controller,
         screens: _buildScreens(),
         items: _navBarsItems(),
-        confineInSafeArea: true,
+        //confineInSafeArea: true,
 
-        backgroundColor: Colors.black87, // Default is Colors.white.
+        backgroundColor: Colors.black26, // Default is Colors.white.
         handleAndroidBackButtonPress: true, // Default is true.
         resizeToAvoidBottomInset: true,
         // This needs to be true if you want to move up the screen when keyboard appears. Default is true.
@@ -84,6 +84,7 @@ class _BottomBarNewPageViewState extends State<BottomBarNewPageView> {
           colorBehindNavBar: Colors.white,
         ),
         popAllScreensOnTapOfSelectedTab: true,
+
         popActionScreens: PopActionScreensType.all,
         itemAnimationProperties: const ItemAnimationProperties(
           // Navigation Bar's items animation properties.
