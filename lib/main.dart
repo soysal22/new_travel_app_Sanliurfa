@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gezi_app/views/package_bottombar.dart';
 import 'package:gezi_app/views/navigatorBarScreens/travel.dart';
+import 'package:gezi_app/views/tabbarViewScreens/hanlar.dart';
 import 'package:gezi_app/views/tabbarViewScreens/klise.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TravelPage(),
+      home: const Hanlar(),
     );
   }
 }

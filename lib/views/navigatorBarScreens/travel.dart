@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/core/widgets/responsive_card.dart';
 import 'package:gezi_app/views/tabbarViewScreens/camiler.dart';
 import 'package:gezi_app/views/tabbarViewScreens/hanlar.dart';
 import 'package:gezi_app/views/tabbarViewScreens/klise.dart';

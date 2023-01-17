@@ -30,8 +30,6 @@ class Kliseler extends StatelessWidget {
         Constants.sizedBoxHeigh20,
         for (int i = 0; i < kliseList.length; i++)
           ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
-        for (int i = 0; i < kliseList.length; i++)
-          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
       ],
     );
   }

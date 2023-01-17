@@ -10,11 +10,9 @@ class Constants {
       "assets/images/info/gobeklitepe.jpeg";
   static const String infoImageHalfeti = "assets/images/info/halfeti.jpg";
 
-  /// Home
+  // Home
 
-  ///  TANITIM
-
-  //  static const String tanitimImageHalfeti ="assets/images/tanitim/";
+  //  TANITIM
 
   static const String tanitimImageSanliurfa =
       "assets/images/tanitim/sanliurfa_tanitim.jpg";
@@ -31,7 +29,7 @@ class Constants {
 
   /// Travels
 
-  // Kliseler
+  // KLİSELER ( CLİCHES )
   //Germuş
   static const String clicheImageGermus =
       "assets/images/travels/kliseler/germus/germus.jpg";
@@ -59,6 +57,45 @@ class Constants {
       "assets/images/travels/kliseler/yakup_manastiri/castle.jpg";
   static const String clicheImageYakupOn =
       "assets/images/travels/kliseler/yakup_manastiri/on.jpg";
+
+  /// HANLAR
+  // BARUTÇU HANI
+  static const String hanlarBarutcu =
+      "assets/images/travels/hanlar/barutcu/barutcu.jpg";
+  static const String hanlarBarutcuOne =
+      "assets/images/travels/hanlar/barutcu/barutcu_one.jpg";
+
+  // GÜMRÜK HANI
+  static const String hanlarGumrukOne =
+      "assets/images/travels/hanlar/gumruk/gumruk.jpg";
+  static const String hanlarGumruktwo =
+      "assets/images/travels/hanlar/gumruk/gumruk_two.jpg";
+
+//  HACİ KAMİL HANI
+
+  static const String hanlarHaciKamil =
+      "assets/images/travels/hanlar/haci_kamil/haci.jpg";
+
+  static const String hanlarHaciKamilOne =
+      "assets/images/travels/hanlar/haci_kamil/haci_one.jpg";
+
+  // MENCEK HANI
+
+  static const String hanlarMencek =
+      "assets/images/travels/hanlar/mencek/mencek.png";
+
+  static const String hanlarMencekOne =
+      "assets/images/travels/hanlar/mencek/mencek.jpg";
+  static const String hanlarMencektwo =
+      "assets/images/travels/hanlar/mencek/mencek_two.jpg";
+
+  // MİLLET HANI
+  static const String hanlarMillet =
+      "assets/images/travels/hanlar/millet/millet.jpg";
+  static const String hanlarMilletOne =
+      "assets/images/travels/hanlar/millet/millet_one.jpg";
+  static const String hanlarMilletTwo =
+      "assets/images/travels/hanlar/millet/millett_two.jpg";
 
   /// TEXTS
 

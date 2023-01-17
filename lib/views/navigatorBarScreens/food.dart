@@ -15,7 +15,7 @@ class _FoodPageState extends State<FoodPage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
-        title: Text("Geleneksel Yemekler"),
+        title: const Text("Geleneksel Yemekler"),
       ),
       body: const Center(child: Text("Welcome To Food Page ")),
     );

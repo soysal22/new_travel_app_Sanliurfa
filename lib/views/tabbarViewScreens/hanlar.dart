@@ -2,16 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
-final List kliseList = [
-  "GERMUŞ KİLİSESİ",
-  "REJİ KİLİSESİ (AZİZ PETRUS KİLİSESİ)",
-  "DEYR-İ YAKUB (YAKUB MANASTIRI)",
+final List hanlarList = [
+//  şaban hanı sıkıntılı restorasyon lazım ,  Kumluhayat Hanı sıkıntılı resim yok ,
+//  fesadı Hanı resim yok  , SAMSAT KAPI HANI RESİM YOK Bican Ağa Hanı resim yok
+
+  /// Topçu hanı topçu meydanındaki balıkçıların olduğu bölgeymiş resmi yok ona bakalım
+  "GÜMRÜK HANI",
+  "BARUTÇU HANI",
+  "TOPÇU HANI",
+  "MENCEK HANI",
+  "HACI KAMİL HANI",
+  "MİLLET HANI ",
 ];
 
-final List kliseListImage = [
-  Constants.clicheImageGermusFront,
-  Constants.clicheImageReji,
-  Constants.clicheImageYakup
+final List hanlarListImage = [
+  Constants.tanitimImageGumrukHani,
+  Constants.hanlarBarutcu,
 ];
 
 class Hanlar extends StatelessWidget {
@@ -28,10 +34,8 @@ class Hanlar extends StatelessWidget {
           style: Theme.of(context).textTheme.headline6,
         ),
         Constants.sizedBoxHeigh20,
-        for (int i = 0; i < kliseList.length; i++)
-          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
-        for (int i = 0; i < kliseList.length; i++)
-          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
+        for (int i = 0; i < hanlarList.length; i++)
+          ResponsiveCard(image: hanlarListImage[i], title: hanlarList[i]),
       ],
     );
   }
