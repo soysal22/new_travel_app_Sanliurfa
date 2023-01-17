@@ -43,96 +43,90 @@ class _TravelPageState extends State<TravelPage> with TickerProviderStateMixin {
             _tabbarDesign(),
             Expanded(
                 child: Padding(
-              padding: EdgeInsets.only(top: _topPadding),
+              padding: EdgeInsets.only(top: _topPadding, left: 10, right: 10),
               child: TabBarView(
                 physics: const NeverScrollableScrollPhysics(),
                 controller: tabController,
                 children: [
                   // Tarihi Yerler
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text("Tarihi Yerler"),
-                        Constants.sizedBoxHeigh20,
-                        Stack(
-                          children: [
-                            Card(
-                              elevation: 10,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: Constants.borderRadius20,
-                              ),
-                              child: ClipRRect(
-                                borderRadius: Constants.borderRadius20,
-                                child: Image.asset(
-                                  Constants.infoImageBalikligol,
-                                  fit: BoxFit.cover,
-                                  width: MediaQuery.of(context).size.width,
-                                  height:
-                                      MediaQuery.of(context).size.height / 4.5,
-                                ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text("Tarihi Yerler"),
+                      Constants.sizedBoxHeigh20,
+                      Stack(
+                        children: [
+                          Card(
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: Constants.borderRadius20,
+                            ),
+                            child: ClipRRect(
+                              borderRadius: Constants.borderRadius20,
+                              child: Image.asset(
+                                Constants.infoImageBalikligol,
+                                fit: BoxFit.cover,
+                                width: MediaQuery.of(context).size.width,
+                                height:
+                                    MediaQuery.of(context).size.height / 4.5,
                               ),
                             ),
-                            Positioned(
-                                bottom: 20,
-                                left: 30,
-                                child: Text(
-                                  "Balıklıgöl",
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .headline5
-                                      ?.copyWith(color: Constants.colorWhite),
-                                ))
-                          ],
-                        ),
-                        Stack(
-                          children: [
-                            Card(
-                              elevation: 10,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: Constants.borderRadius20,
-                              ),
-                              child: ClipRRect(
-                                borderRadius: Constants.borderRadius20,
-                                child: Image.asset(
-                                  Constants.infoImageBalikligol,
-                                  fit: BoxFit.cover,
-                                  width: MediaQuery.of(context).size.width,
-                                  height:
-                                      MediaQuery.of(context).size.height / 4.5,
-                                ),
+                          ),
+                          Positioned(
+                              bottom: 20,
+                              left: 30,
+                              child: Text(
+                                "Balıklıgöl",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headline5
+                                    ?.copyWith(color: Constants.colorWhite),
+                              ))
+                        ],
+                      ),
+                      Stack(
+                        children: [
+                          Card(
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: Constants.borderRadius20,
+                            ),
+                            child: ClipRRect(
+                              borderRadius: Constants.borderRadius20,
+                              child: Image.asset(
+                                Constants.infoImageBalikligol,
+                                fit: BoxFit.cover,
+                                width: MediaQuery.of(context).size.width,
+                                height:
+                                    MediaQuery.of(context).size.height / 4.5,
                               ),
                             ),
-                            Positioned(
-                                bottom: 20,
-                                left: 30,
-                                child: Text(
-                                  "Balıklıgöl",
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .headline5
-                                      ?.copyWith(color: Constants.colorWhite),
-                                ))
-                          ],
-                        ),
-                      ],
-                    ),
+                          ),
+                          Positioned(
+                              bottom: 20,
+                              left: 30,
+                              child: Text(
+                                "Balıklıgöl",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .headline5
+                                    ?.copyWith(color: Constants.colorWhite),
+                              ))
+                        ],
+                      ),
+                    ],
                   ),
 
                   // Müzeler
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10, right: 10),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Müzeler",
-                          style: Theme.of(context).textTheme.headline6,
-                        ),
-                        Constants.sizedBoxHeigh20,
-                      ],
-                    ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Müzeler",
+                        style: Theme.of(context).textTheme.headline6,
+                      ),
+                      Constants.sizedBoxHeigh20,
+                    ],
                   ),
 
                   //Camiler

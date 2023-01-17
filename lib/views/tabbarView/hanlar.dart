@@ -14,8 +14,8 @@ final List kliseListImage = [
   Constants.clicheImageYakup
 ];
 
-class Klise extends StatelessWidget {
-  const Klise({super.key});
+class Hanlar extends StatelessWidget {
+  const Hanlar({super.key});
 
   @override
   Widget build(BuildContext context) {

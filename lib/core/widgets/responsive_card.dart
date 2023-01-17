@@ -12,10 +12,8 @@ class ResponsiveCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      
       children: [
         Card(
-
           elevation: 10,
           shape: RoundedRectangleBorder(
             borderRadius: Constants.borderRadius20,
