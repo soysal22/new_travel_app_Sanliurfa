@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
+import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 final List kliseList = [
@@ -22,12 +23,7 @@ class Camiler extends StatelessWidget {
     return ListView(
       shrinkWrap: true,
       children: [
-        Text(
-          textAlign: TextAlign.center,
-          "Camiler",
-          style: Theme.of(context).textTheme.headline6,
-        ),
-        Constants.sizedBoxHeigh20,
+        CategoryTitle(title: "Camiler"),
         for (int i = 0; i < kliseList.length; i++)
           ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
         for (int i = 0; i < kliseList.length; i++)

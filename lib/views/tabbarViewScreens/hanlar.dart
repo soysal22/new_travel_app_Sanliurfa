@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
+import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 final List hanlarList = [
@@ -9,15 +10,18 @@ final List hanlarList = [
   /// Topçu hanı topçu meydanındaki balıkçıların olduğu bölgeymiş resmi yok ona bakalım
   "GÜMRÜK HANI",
   "BARUTÇU HANI",
-  "TOPÇU HANI",
   "MENCEK HANI",
-  "HACI KAMİL HANI",
   "MİLLET HANI ",
+  "HACI KAMİL HANI",
+  //"TOPÇU HANI",
 ];
 
 final List hanlarListImage = [
   Constants.tanitimImageGumrukHani,
   Constants.hanlarBarutcu,
+  Constants.hanlarMencek,
+  Constants.hanlarMillet,
+  Constants.hanlarHaciKamil
 ];
 
 class Hanlar extends StatelessWidget {
@@ -28,12 +32,7 @@ class Hanlar extends StatelessWidget {
     return ListView(
       shrinkWrap: true,
       children: [
-        Text(
-          textAlign: TextAlign.center,
-          "Hanlar",
-          style: Theme.of(context).textTheme.headline6,
-        ),
-        Constants.sizedBoxHeigh20,
+        CategoryTitle(title: "HANLAR"),
         for (int i = 0; i < hanlarList.length; i++)
           ResponsiveCard(image: hanlarListImage[i], title: hanlarList[i]),
       ],
