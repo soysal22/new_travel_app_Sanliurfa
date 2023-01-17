@@ -16,9 +16,11 @@ class ResponsiveCard extends StatelessWidget {
         Card(
           elevation: 10,
           shape: RoundedRectangleBorder(
+            // kard için border
             borderRadius: Constants.borderRadius20,
           ),
           child: ClipRRect(
+            // Image  için border
             borderRadius: Constants.borderRadius20,
             child: Image.asset(
               image,

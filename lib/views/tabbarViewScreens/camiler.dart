@@ -19,24 +19,19 @@ class Camiler extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      textDirection: TextDirection.ltr,
+    return ListView(
+      shrinkWrap: true,
       children: [
         Text(
-          "Kliseler",
+          textAlign: TextAlign.center,
+          "Camiler",
           style: Theme.of(context).textTheme.headline6,
         ),
         Constants.sizedBoxHeigh20,
-        ListView(
-          shrinkWrap: true,
-          children: [
-            for (int i = 0; i < kliseList.length; i++)
-              ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
-            for (int i = 0; i < kliseList.length; i++)
-              ResponsiveCard(image: kliseListImage[i], title: kliseList[i])
-          ],
-        ),
+        for (int i = 0; i < kliseList.length; i++)
+          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
+        for (int i = 0; i < kliseList.length; i++)
+          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
       ],
     );
   }

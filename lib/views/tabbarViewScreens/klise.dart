@@ -14,29 +14,24 @@ final List kliseListImage = [
   Constants.clicheImageYakup
 ];
 
-class Klise extends StatelessWidget {
-  const Klise({super.key});
+class Kliseler extends StatelessWidget {
+  const Kliseler({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      textDirection: TextDirection.ltr,
+    return ListView(
+      shrinkWrap: true,
       children: [
         Text(
+          textAlign: TextAlign.center,
           "Kliseler",
           style: Theme.of(context).textTheme.headline6,
         ),
         Constants.sizedBoxHeigh20,
-        ListView(
-          shrinkWrap: true,
-          children: [
-            for (int i = 0; i < kliseList.length; i++)
-              ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
-            for (int i = 0; i < kliseList.length; i++)
-              ResponsiveCard(image: kliseListImage[i], title: kliseList[i])
-          ],
-        ),
+        for (int i = 0; i < kliseList.length; i++)
+          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
+        for (int i = 0; i < kliseList.length; i++)
+          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
       ],
     );
   }

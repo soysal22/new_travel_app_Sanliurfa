@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/views/package_bottombar.dart';
 import 'package:gezi_app/views/navigatorBarScreens/travel.dart';
+import 'package:gezi_app/views/tabbarViewScreens/klise.dart';
 
 void main() {
   runApp(const MyApp());
