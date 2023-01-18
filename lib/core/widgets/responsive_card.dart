@@ -42,12 +42,15 @@ class ResponsiveCard extends StatelessWidget {
     return Positioned(
         bottom: 20,
         left: 30,
-        child: Text(
-          title,
-          style: Theme.of(context)
-              .textTheme
-              .headline6
-              ?.copyWith(color: Constants.colorWhite),
+        child: Container(
+          color: Constants.colorResponsiveCardColor,
+          child: Text(
+            title,
+            style: Theme.of(context)
+                .textTheme
+                .headline6
+                ?.copyWith(color: Color.fromARGB(233, 255, 255, 255)),
+          ),
         ));
   }
 }

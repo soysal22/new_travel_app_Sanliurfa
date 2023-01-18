@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/info_title_text.dart';
 import 'package:gezi_app/core/widgets/info_subtitle_text.dart';
-import 'package:gezi_app/views/package_bottombar.dart';
 import 'package:gezi_app/views/splash_page.dart';
 
 class Info extends StatefulWidget {
@@ -89,10 +88,8 @@ class _InfoState extends State<Info> {
           setState(() {
             prefs.setBool('change', true);
           });
-          Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const BottomBarNewPageView()));
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) => const SplashPage()));
         },
         child: const Icon(
           Icons.arrow_right_alt_outlined,

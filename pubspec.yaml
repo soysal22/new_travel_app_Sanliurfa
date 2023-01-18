@@ -76,6 +76,17 @@ flutter:
    - assets/images/travels/hanlar/mencek/
    - assets/images/travels/hanlar/millet/
 
+   - assets/images/travels/museums/haleplibahce/
+   - assets/images/travels/museums/kent/
+   - assets/images/travels/museums/kurtulus/
+   - assets/images/travels/museums/muslum_baba/
+   - assets/images/travels/museums/mutfak/
+   - assets/images/travels/museums/tatlises/
+   - assets/images/travels/museums/sanliurfa_muzesi/
+
+   - assets/images/travels/meydanlar/hasimiye/
+   - assets/images/travels/meydanlar/ 
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

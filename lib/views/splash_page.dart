@@ -4,17 +4,17 @@ import 'package:gezi_app/views/deneme/bottombar_page.dart';
 import 'package:gezi_app/views/info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
+late SharedPreferences prefs;
+
+bool? finalBool;
+
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 
   @override
   State<SplashPage> createState() => _SplashPageState();
 }
-
-final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
-late SharedPreferences prefs;
-
-bool? finalBool;
 
 class _SplashPageState extends State<SplashPage> {
   @override
@@ -33,6 +33,7 @@ class _SplashPageState extends State<SplashPage> {
         }
       });
     });
+
     super.initState();
   }
 

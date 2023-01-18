@@ -4,11 +4,23 @@ import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 final List museumsList = [
-  "GERMUŞ KİLİSESİ",
+  "ŞANLIURFA MÜZESİ ", // Şalıurfa arkeoloji müzesi ile aynı isme sahip
+  "İBRAHİM TATLISES MÜZİK MÜZESİ",
+  "HALEPLİBAHÇE MOZAİK MÜZESİ",
+  "ŞANLIURFA KENT MÜZESİ ",
+  "KURTULUŞ MÜZESİ",
+  "MUTFAK MÜZESİ",
+  "MÜSLÜM BABA MÜZESİ",
 ];
 
 final List museumsListImage = [
-  Constants.clicheImageGermusFront,
+  Constants.museumsSanliurfa,
+  Constants.museumsTatlises,
+  Constants.museumsHalepli,
+  Constants.museumsKent,
+  Constants.museumsKurtulus,
+  Constants.museumsMutfak,
+  Constants.museumsMuslum,
 ];
 
 class Museums extends StatelessWidget {
@@ -20,8 +32,6 @@ class Museums extends StatelessWidget {
       shrinkWrap: true,
       children: [
         CategoryTitle(title: "MUSEUMS"),
-        for (int i = 0; i < museumsList.length; i++)
-          ResponsiveCard(image: museumsListImage[i], title: museumsList[i]),
         for (int i = 0; i < museumsList.length; i++)
           ResponsiveCard(image: museumsListImage[i], title: museumsList[i]),
       ],

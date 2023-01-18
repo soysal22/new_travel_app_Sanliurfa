@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gezi_app/views/navigatorBarScreens/travel.dart';
-import 'package:gezi_app/views/splash_page.dart';
+import 'package:gezi_app/views/deneme/bottombar_page.dart';
+import 'package:gezi_app/views/tabbarViewScreens/meydanlar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashPage(),
+      home: const BottomBarPageView(),
     );
   }
 }

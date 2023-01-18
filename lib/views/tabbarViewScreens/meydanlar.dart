@@ -3,16 +3,20 @@ import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
-final List kliseList = [
-  "GERMUŞ KİLİSESİ",
-  "REJİ KİLİSESİ (AZİZ PETRUS KİLİSESİ)",
-  "DEYR-İ YAKUB (YAKUB MANASTIRI)",
+final List meydanList = [
+  "HAŞİMİYE MEYDANI",
+  "RABİA MEYDANI",
+  "TOPÇU MEYDANI",
+  "YILDIZ MEYDANI",
+  "58 MEYDANI",
 ];
 
-final List kliseListImage = [
-  Constants.clicheImageGermusFront,
-  Constants.clicheImageReji,
-  Constants.clicheImageYakup
+final List meydanListImage = [
+  Constants.meydanHasimiye,
+  Constants.meydanRabia,
+  Constants.meydanTopcu,
+  Constants.meydanYildiz,
+  Constants.meydanElliSekiz,
 ];
 
 class Meydanlar extends StatelessWidget {
@@ -24,10 +28,8 @@ class Meydanlar extends StatelessWidget {
       shrinkWrap: true,
       children: [
         CategoryTitle(title: "MEYDANLAR"),
-        for (int i = 0; i < kliseList.length; i++)
-          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
-        for (int i = 0; i < kliseList.length; i++)
-          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
+        for (int i = 0; i < meydanList.length; i++)
+          ResponsiveCard(image: meydanListImage[i], title: meydanList[i]),
       ],
     );
   }
