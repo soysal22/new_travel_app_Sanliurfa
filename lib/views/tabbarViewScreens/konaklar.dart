@@ -36,18 +36,13 @@ class Konaklar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return ListView(
       shrinkWrap: true,
-      itemCount: konaklarList.length,
-      itemBuilder: (context, index) {
-        return Column(
-          children: [
-            CategoryTitle(title: "KONAKLAR"),
-            ResponsiveCard(
-                image: konaklarListImage[index], title: konaklarList[index]),
-          ],
-        );
-      },
+      children: [
+        CategoryTitle(title: "KONAKLAR"),
+        for (int i = 0; i < konaklarList.length; i++)
+          ResponsiveCard(image: konaklarListImage[i], title: konaklarList[i]),
+      ],
     );
   }
 }

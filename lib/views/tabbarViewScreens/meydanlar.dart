@@ -4,17 +4,17 @@ import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 final List meydanList = [
-  "HAŞİMİYE MEYDANI",
   "RABİA MEYDANI",
   "TOPÇU MEYDANI",
+  "HAŞİMİYE MEYDANI",
   "YILDIZ MEYDANI",
   "58 MEYDANI",
 ];
 
 final List meydanListImage = [
-  Constants.meydanHasimiye,
   Constants.meydanRabia,
   Constants.meydanTopcu,
+  Constants.meydanHasimiye,
   Constants.meydanYildiz,
   Constants.meydanElliSekiz,
 ];

@@ -8,8 +8,8 @@ final List hanlarList = [
 //  fesadı Hanı resim yok  , SAMSAT KAPI HANI RESİM YOK Bican Ağa Hanı resim yok
 
   /// Topçu hanı topçu meydanındaki balıkçıların olduğu bölgeymiş resmi yok ona bakalım
-  "GÜMRÜK HANI",
   "BARUTÇU HANI",
+  "GÜMRÜK HANI",
   "MENCEK HANI",
   "MİLLET HANI ",
   "HACI KAMİL HANI",
@@ -17,9 +17,9 @@ final List hanlarList = [
 ];
 
 final List hanlarListImage = [
-  Constants.tanitimImageGumrukHani,
   Constants.hanlarBarutcu,
   Constants.hanlarMencek,
+  Constants.tanitimImageGumrukHani,
   Constants.hanlarMillet,
   Constants.hanlarHaciKamil
 ];

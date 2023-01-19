@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/views/deneme/bottombar_page.dart';
+import 'package:gezi_app/views/tabbarViewScreens/konaklar.dart';
 
 void main() {
   runApp(const MyApp());

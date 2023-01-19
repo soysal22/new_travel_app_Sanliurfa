@@ -11,27 +11,30 @@ class ResponsiveCard extends StatelessWidget {
   String title;
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Card(
-          elevation: 10,
-          shape: RoundedRectangleBorder(
-            // kard için border
-            borderRadius: Constants.borderRadius20,
-          ),
-          child: ClipRRect(
-            // Image  için border
-            borderRadius: Constants.borderRadius20,
-            child: Image.asset(
-              image,
-              fit: BoxFit.cover,
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 4.5,
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: Stack(
+        children: [
+          Card(
+            elevation: 10,
+            shape: RoundedRectangleBorder(
+              // kard için border
+              borderRadius: Constants.borderRadius20,
+            ),
+            child: ClipRRect(
+              // Image  için border
+              borderRadius: Constants.borderRadius20,
+              child: Image.asset(
+                image,
+                fit: BoxFit.cover,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 4.5,
+              ),
             ),
           ),
-        ),
-        _title(context)
-      ],
+          _title(context)
+        ],
+      ),
     );
   }
 
