@@ -192,6 +192,10 @@ class Constants {
   static const String meydanElliSekiz =
       "assets/images/travels/meydanlar/elli_meydan.jpg";
 
+  /// KONAKLAR
+
+  // S
+
   /// TEXTS
 
   // TANITIM
