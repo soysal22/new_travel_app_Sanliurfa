@@ -5,16 +5,30 @@ import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 final List konaklarList = [
   "CEVAHİR KONAĞI", //HACI MUSTAFA HACIKAMİLOĞLU KONAĞI ESKİ İSMİ
-  "TBMM Evi (Şahap Bakır Evi - İsa Beden Evi)",
-  "Mahmut Nedim Efendi Konağı",
-  "Şair Sakıp Efendi konağı",
-  "Feyzullah Efendi Konağı", //halfeti
-  "AKYÜZ EVLERİ KONAĞI",
+  "TBMM EVİ (Şahap Bakır Evi \n- İsa Beden Evi)",
+  "MAHMUT NEDİM EFENDİ KONAĞI", // kurtuluş müzesi tatlises müslüm baba üzesi
+  "ŞAİR SAKIP EFENDİ KONAĞI",
+  "FEYZULLAH EFENDİ KONAĞI", //halfeti
   "VİLAYET KONAK EVİ",
+  "TÜRKMEN KONUK EVİ ",
+  "ELRUHA KONUK EVİ",
+  "GÜLİZAR KONUK EVİ",
+  "KÖY YATI MEKTEBİ",
+  "ELÇİ KONUK EVİ"
 ];
 
 final List konaklarListImage = [
-  Constants.clicheImageGermusFront,
+  Constants.konakCevahir,
+  Constants.konakTbmm,
+  Constants.konakMahmut,
+  Constants.konakSair,
+  Constants.konakFeyzullah,
+  Constants.konakVilayet,
+  Constants.konakTurkmen,
+  Constants.konakElruha,
+  Constants.konakGulizar,
+  Constants.konakKoyYati,
+  Constants.konakElci,
 ];
 
 class Konaklar extends StatelessWidget {
@@ -22,13 +36,18 @@ class Konaklar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return ListView.builder(
       shrinkWrap: true,
-      children: [
-        CategoryTitle(title: "KONAKLAR"),
-        for (int i = 0; i < konaklarList.length; i++)
-          ResponsiveCard(image: konaklarListImage[i], title: konaklarList[i]),
-      ],
+      itemCount: konaklarList.length,
+      itemBuilder: (context, index) {
+        return Column(
+          children: [
+            CategoryTitle(title: "KONAKLAR"),
+            ResponsiveCard(
+                image: konaklarListImage[index], title: konaklarList[index]),
+          ],
+        );
+      },
     );
   }
 }

@@ -194,7 +194,109 @@ class Constants {
 
   /// KONAKLAR
 
-  // S
+  // CEVAHİR KONAĞI
+  static const String konakCevahir =
+      "assets/images/travels/konaklar/cevahir/front.jpg";
+  static const String konakCevahirOne =
+      "assets/images/travels/konaklar/cevahir/one.webp";
+  static const String konakCevahirTwo =
+      "assets/images/travels/konaklar/cevahir/two.webp";
+
+  // TBMM EVİ  KONAĞI
+  static const String konakTbmm =
+      "assets/images/travels/konaklar/tbmm_evi/front.jpg";
+  static const String konakTbmmOne =
+      "assets/images/travels/konaklar/tbmm_evi/one.jpg";
+  static const String konakTbmmTwo =
+      "assets/images/travels/konaklar/tbmm_evi/two.jpg";
+  static const String konakTbmmThree =
+      "assets/images/travels/konaklar/tbmm_evi/three.jpg";
+
+  // MAHMUD NEDİM   KONAĞI
+  static const String konakMahmut =
+      "assets/images/travels/konaklar/mahmut/front.jpg";
+  static const String konakMahmutOne =
+      "assets/images/travels/konaklar/mahmut/one.jpg";
+  static const String konakMahmutTwo =
+      "assets/images/travels/konaklar/mahmut/two.jpg";
+  static const String konakMahmutThree =
+      "assets/images/travels/konaklar/mahmut/three.jpg";
+
+  // ŞAİR SAKIP EFENDİ  KONAĞI
+  static const String konakSair =
+      "assets/images/travels/konaklar/sair_sakip/front.jpg";
+  static const String konakSairOne =
+      "assets/images/travels/konaklar/sair_sakip/one.jpg";
+  static const String konakSairTwo =
+      "assets/images/travels/konaklar/sair_sakip/two.jpg";
+  static const String konakSairThree =
+      "assets/images/travels/konaklar/sair_sakip/three.jpg";
+
+// FEYZULLAH EFENDİ  KONAĞI
+  static const String konakFeyzullah =
+      "assets/images/travels/konaklar/feyzullah/front.jpg";
+  static const String konakFeyzullahOne =
+      "assets/images/travels/konaklar/feyzullah/one.jpeg";
+  static const String konakFeyzullahTwo =
+      "assets/images/travels/konaklar/feyzullah/two.jpeg";
+  static const String konakFeyzullahThree =
+      "assets/images/travels/konaklar/feyzullah/three.jpeg";
+
+  // VİLAYET KONUK EVİ
+  static const String konakVilayet =
+      "assets/images/travels/konaklar/vilayet/front.jpg";
+  static const String konakVilayetOne =
+      "assets/images/travels/konaklar/vilayet/one.jpg";
+  static const String konakVilayetTwo =
+      "assets/images/travels/konaklar/vilayet/two.jpg";
+  static const String konakVilayetThree =
+      "assets/images/travels/konaklar/vilayet/three.jpg";
+
+  // TÜRKMEN KONUK EVİ
+  static const String konakTurkmen =
+      "assets/images/travels/konaklar/turkmen/front.jpg";
+  static const String konakTurkmenOne =
+      "assets/images/travels/konaklar/turkmen/one.webp";
+  static const String konakTurkmenTwo =
+      "assets/images/travels/konaklar/turkmen/two.webp";
+  static const String konakTurkmenThree =
+      "assets/images/travels/konaklar/turkmen/three.jpg";
+  static const String konakTurkmenfour =
+      "assets/images/travels/konaklar/turkmen/four.webp";
+
+  // ELÇİ KONUK EVİ
+  static const String konakElci =
+      "assets/images/travels/konaklar/elci/front.jpg";
+  static const String konakElciOne =
+      "assets/images/travels/konaklar/elci/one.webp";
+  static const String konakElciTwo =
+      "assets/images/travels/konaklar/elci/two.webp";
+  static const String konakElciThree =
+      "assets/images/travels/konaklar/elci/three.webp";
+
+  // ELRUHA KONUK EVİ
+  static const String konakElruha =
+      "assets/images/travels/konaklar/elruha/front.jpg";
+  static const String konakElruhaOne =
+      "assets/images/travels/konaklar/elruha/one.webp";
+  static const String konakElruhaTwo =
+      "assets/images/travels/konaklar/elruha/two.jpg";
+
+  // GÜLİZAR KONUK EVİ
+  static const String konakGulizar =
+      "assets/images/travels/konaklar/gulizar/front.jpg";
+  static const String konakGulizarOne =
+      "assets/images/travels/konaklar/gulizar/one.jpg";
+  static const String konakGulizarTwo =
+      "assets/images/travels/konaklar/gulizar/two.jpg";
+  static const String konakGulizarThree =
+      "assets/images/travels/konaklar/gulizar/three.jpg";
+
+  // KÖY YATI MEKTEBİ (ŞİMDİKİ İL MİLLİ EĞİTİM MÜDÜRLÜĞÜ )
+  static const String konakKoyYati =
+      "assets/images/travels/konaklar/koy_yati_mektebi/front.jpg";
+  static const String konakKoyYatiOne =
+      "assets/images/travels/konaklar/koy_yati_mektebi/one.jpg";
 
   /// TEXTS
 

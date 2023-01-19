@@ -87,6 +87,18 @@ flutter:
    - assets/images/travels/meydanlar/hasimiye/
    - assets/images/travels/meydanlar/ 
 
+   - assets/images/travels/konaklar/cevahir/
+   - assets/images/travels/konaklar/elci/
+   - assets/images/travels/konaklar/elruha/
+   - assets/images/travels/konaklar/feyzullah/
+   - assets/images/travels/konaklar/gulizar/
+   - assets/images/travels/konaklar/koy_yati_mektebi/
+   - assets/images/travels/konaklar/mahmut/
+   - assets/images/travels/konaklar/sair_sakip/
+   - assets/images/travels/konaklar/tbmm_evi/
+   - assets/images/travels/konaklar/turkmen/    
+   - assets/images/travels/konaklar/vilayet/           
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
