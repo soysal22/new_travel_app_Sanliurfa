@@ -34,7 +34,7 @@ dependencies:
   persistent_bottom_nav_bar: any
   carousel_slider: any
   shared_preferences: any
- 
+  get: any
 
 
   # The following adds the Cupertino Icons font to your application.

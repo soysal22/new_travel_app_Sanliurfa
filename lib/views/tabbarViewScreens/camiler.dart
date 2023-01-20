@@ -3,16 +3,35 @@ import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
-final List kliseList = [
-  "GERMUŞ KİLİSESİ",
-  "REJİ KİLİSESİ (AZİZ PETRUS KİLİSESİ)",
-  "DEYR-İ YAKUB (YAKUB MANASTIRI)",
+//Hızanoğlu Camii
+// tabakhane cami nin resmi  yok az güzel değil
+// YENİ ÖMERİYE CAMİ NİN RESMİ YOK
+//NİMETULLAH CAMİNİN RESMİ YOK 58 MEYDANINDAYMIŞ
+// ak camide resmi yok
+// Tüzeken caminin güzel resimleri yok
+//Cabir El Ensar Camisi  bunu türbelerde ekle cam resmi yok
+// hüseyin paşa caminin resmi yok ptt kargodan sonra yolun ortasındaki camidir
+// hekim dedenin caminin resmi yok çek
+// yusuf paşa caminin resmini çek zeki dondurmanın arkasında
+// Siverekli Mescidi / Hz.Abbas Cami  bak
+//Peygamber Cami / Circis Peygamber Cami bak
+// sehbenderiye cami topçu meydanındaki
+// kadioğlu caminin resmi yok
+// kutbeddin cami resmi yok
+// İmam Sekkâki Camii resmi  yok
+// sultan bey cami resmi yok
+// miskinler mescidi resmi yok
+// arabi cami resim yok  yeni arabi cami sait gilin iş yerlerinin arkasında
+// behramlar cami resim yok
+// hayrullah cami resim yok
+final List camiList = [
+  "ULU CAMİ",
+  "NİMETULLAH CAMİ", // Ak Camii
+  "YUSUF PAŞA CAMİ",
 ];
 
-final List kliseListImage = [
+final List camiListImage = [
   Constants.clicheImageGermusFront,
-  Constants.clicheImageReji,
-  Constants.clicheImageYakup
 ];
 
 class Camiler extends StatelessWidget {
@@ -23,11 +42,9 @@ class Camiler extends StatelessWidget {
     return ListView(
       shrinkWrap: true,
       children: [
-        CategoryTitle(title: "Camiler"),
-        for (int i = 0; i < kliseList.length; i++)
-          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
-        for (int i = 0; i < kliseList.length; i++)
-          ResponsiveCard(image: kliseListImage[i], title: kliseList[i]),
+        CategoryTitle(title: "CAMİLER"),
+        for (int i = 0; i < camiList.length; i++)
+          ResponsiveCard(image: camiListImage[i], title: camiList[i]),
       ],
     );
   }

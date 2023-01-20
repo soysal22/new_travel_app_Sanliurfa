@@ -1,8 +1,10 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/info_title_text.dart';
 import 'package:gezi_app/core/widgets/info_subtitle_text.dart';
+import 'package:gezi_app/views/bottombar_page.dart';
 import 'package:gezi_app/views/splash_page.dart';
 
 class Info extends StatefulWidget {
@@ -86,10 +88,10 @@ class _InfoState extends State<Info> {
             )),
         onPressed: () {
           setState(() {
-            prefs.setBool('change', true);
+            prefs
+                ?.setBool('change', true)
+                .then((value) => Get.to(() => const BottomBarPageView()));
           });
-          Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (context) => const SplashPage()));
         },
         child: const Icon(
           Icons.arrow_right_alt_outlined,

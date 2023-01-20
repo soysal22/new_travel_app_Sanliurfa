@@ -31,7 +31,7 @@ class Museums extends StatelessWidget {
     return ListView(
       shrinkWrap: true,
       children: [
-        CategoryTitle(title: "MUSEUMS"),
+        CategoryTitle(title: "MÜZELER"),
         for (int i = 0; i < museumsList.length; i++)
           ResponsiveCard(image: museumsListImage[i], title: museumsList[i]),
       ],

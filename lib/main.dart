@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:gezi_app/views/deneme/bottombar_page.dart';
-import 'package:gezi_app/views/tabbarViewScreens/konaklar.dart';
+import 'package:flutter/services.dart';
+import 'package:get/get.dart';
+import 'package:gezi_app/core/constants/constants.dart';
+import 'package:gezi_app/views/bottombar_page.dart';
+import 'package:gezi_app/views/info.dart';
+import 'package:gezi_app/views/splash_page.dart';
+import 'package:gezi_app/views/tabbarViewScreens/camiler.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(statusBarColor: Constants.colorTranspartent));
+
   runApp(const MyApp());
 }
 
@@ -11,7 +19,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Travel Demo',
       theme: ThemeData(

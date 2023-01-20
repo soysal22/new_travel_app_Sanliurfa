@@ -1,11 +1,12 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:gezi_app/views/deneme/bottombar_page.dart';
+import 'package:get/get.dart';
+import 'package:gezi_app/views/bottombar_page.dart';
 import 'package:gezi_app/views/info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
-late SharedPreferences prefs;
+SharedPreferences? prefs;
 
 bool? finalBool;
 
@@ -19,17 +20,14 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
-    // shared refence ın kontrolünü yapıyorum  ki tekrar tekrar info sayfası çıkmasın
+    //shared refence ın kontrolünü yapıyorum  ki tekrar tekrar info sayfası çıkmasın
+
     getValue().whenComplete(() async {
       Future.delayed(const Duration(milliseconds: 4), () {
         if (finalBool == true) {
-          Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (context) => const BottomBarPageView(),
-          ));
+          Get.to(() => const BottomBarPageView());
         } else {
-          Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (context) => const Info(),
-          ));
+          Get.to(() => const Info());
         }
       });
     });
@@ -41,7 +39,7 @@ class _SplashPageState extends State<SplashPage> {
     prefs = await _prefs;
 
     setState(() {
-      finalBool = prefs.getBool('change');
+      finalBool = prefs?.getBool('change') ?? false;
     });
 
     log("final Bool: $finalBool");

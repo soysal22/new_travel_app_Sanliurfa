@@ -306,6 +306,7 @@ class Constants {
 //  Colors
   static const Color colorResponsiveCardColor =
       Color.fromARGB(50, 192, 190, 190);
+  static const Color colorTranspartent = Colors.transparent;
   static const Color colorBlack = Colors.black;
   static const Color colorWhite = Colors.white;
   static const Color colorBlue = Colors.blueAccent;
