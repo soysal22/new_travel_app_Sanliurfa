@@ -196,7 +196,7 @@ class Constants {
 
   // CEVAHİR KONAĞI
   static const String konakCevahir =
-      "assets/images/travels/konaklar/cevahir/front.jpg";
+      "assets/images/travels/konaklar/cevahir/front.png";
   static const String konakCevahirOne =
       "assets/images/travels/konaklar/cevahir/one.webp";
   static const String konakCevahirTwo =
