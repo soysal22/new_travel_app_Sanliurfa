@@ -136,7 +136,7 @@ class Constants {
   // ŞANLIURFA KENT MÜZESİ
 
   static const String museumsKent =
-      "assets/images/travels/museums/kent/front.jpg";
+      "assets/images/travels/museums/kent/front.jpeg";
   static const String museumsKentOn =
       "assets/images/travels/museums/kent/on.jpg";
   static const String museumsKentOne =
@@ -297,6 +297,10 @@ class Constants {
       "assets/images/travels/konaklar/koy_yati_mektebi/front.jpg";
   static const String konakKoyYatiOne =
       "assets/images/travels/konaklar/koy_yati_mektebi/one.jpg";
+
+  ///  CAMİLER
+
+//  HALİLÜR RAHMAN CAMİ
 
   /// TEXTS
 

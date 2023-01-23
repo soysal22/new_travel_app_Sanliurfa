@@ -3,11 +3,18 @@ import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
+// rızvaniye cami balıklıgölün karşı tarafındaki cami
+// mevlidi halil cami halilur rahman ile aynı isme sahip
+// CARHOĞLU CAMİ RESMİ YOK
+// ESKİ ÖMERİYE CAMİ RESMİ YOK
+// CİRCİS CAMİ DAHA İYİ RESİM ÇEK
+// hasan paşa cami resmi yok balıklı göl girişindeki cami attarcılar tarafından gelince
 //Hızanoğlu Camii
 // tabakhane cami nin resmi  yok az güzel değil
 // YENİ ÖMERİYE CAMİ NİN RESMİ YOK
 //NİMETULLAH CAMİNİN RESMİ YOK 58 MEYDANINDAYMIŞ
 // ak camide resmi yok
+// mevlevi hane cami resim yok
 // Tüzeken caminin güzel resimleri yok
 //Cabir El Ensar Camisi  bunu türbelerde ekle cam resmi yok
 // hüseyin paşa caminin resmi yok ptt kargodan sonra yolun ortasındaki camidir
@@ -18,15 +25,27 @@ import 'package:gezi_app/core/widgets/responsive_card.dart';
 // sehbenderiye cami topçu meydanındaki
 // kadioğlu caminin resmi yok
 // kutbeddin cami resmi yok
-// İmam Sekkâki Camii resmi  yok
+// İmam Sekkâki Cami resmi  yok
+// imambakır hassan olması lazım ismi onu türbeler kısmına ekleyebiliriz
 // sultan bey cami resmi yok
 // miskinler mescidi resmi yok
 // arabi cami resim yok  yeni arabi cami sait gilin iş yerlerinin arkasında
 // behramlar cami resim yok
 // hayrullah cami resim yok
+// hacı lütfi foto çok az
+//Çakeri Cami foto yok
+// Hızanoğlu Cami foto yok
+//Damat Süleyman Paşa Cami  foto yok  eski belediyenin arkawsındaki cami
+// Eski Sefalı Cami  foto yok
+//Müderris Cami foto yok
+//Nur Ali cami arap meydanını aşağı girişinde ki mescidtir
+// toktemur mescidinin resmi yok  Hasan Padişah Camii’nin doğusuna bitişik miş
+
 final List camiList = [
+  "HALİLÜR RAHMAN ",
+  "RIZVANİYE CAMİ",
+  "HASAN PAŞA CAMİ",
   "ULU CAMİ",
-  "NİMETULLAH CAMİ", // Ak Camii
   "YUSUF PAŞA CAMİ",
 ];
 
