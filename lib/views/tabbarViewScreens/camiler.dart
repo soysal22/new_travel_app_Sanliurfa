@@ -42,11 +42,21 @@ import 'package:gezi_app/core/widgets/responsive_card.dart';
 // toktemur mescidinin resmi yok  Hasan Padişah Camii’nin doğusuna bitişik miş
 
 final List camiList = [
-  "HALİLÜR RAHMAN ",
-  "RIZVANİYE CAMİ",
-  "HASAN PAŞA CAMİ",
+  "HALİLÜR RAHMAN CAMİ",
   "ULU CAMİ",
+  "RIZVANİYE CAMİ",
+  "SELAHATTİN EYYUBİ CAMİ",
+  "HASAN PAŞA CAMİ",
+  "FIRFIRLI CAMİ", // On İki Havari Kilisesi Aziz Havariler Kilisesi
   "YUSUF PAŞA CAMİ",
+  "CİRCİS PEYGAMBER CAMİ",
+  "HACI YADİGAR CAMİ",
+  "HARRAN ULU CAMİ",
+  "HÜSEYİN PAŞA CAMİ",
+  "KADIOĞLU CAMİ",
+  "KARA MUSA CAMİ",
+  "KUTBEDDİN CAMİ",
+  "MEVLEVİHANE CAMİ ",
 ];
 
 final List camiListImage = [

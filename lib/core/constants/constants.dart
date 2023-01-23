@@ -300,10 +300,137 @@ class Constants {
 
   ///  CAMİLER
 
-//  HALİLÜR RAHMAN CAMİ
+  // HALİLÜR RAHMAN CAMİ
+  static const String camiHalilur =
+      "assets/images/travels/camiler/halilur_rahman/front.jpg";
+  static const String camiHalilurOne =
+      "assets/images/travels/camiler/halilur_rahman/one.jpg";
+  static const String camiHalilurTwo =
+      "assets/images/travels/camiler/halilur_rahman/two.jpg";
 
-  /// TEXTS
+  //  ULU CAMİ
+  static const String camiUlu = "assets/images/travels/camiler/ulu/front.png";
+  static const String camiUluOne = "assets/images/travels/camiler/ulu/one.jpg";
+  static const String camiUluTwo = "assets/images/travels/camiler/ulu/two.png";
+  static const String camiUluThree =
+      "assets/images/travels/camiler/ulu/three.jpeg";
+  static const String camiUluFour =
+      "assets/images/travels/camiler/ulu/four.png";
 
+  //  RIZVANİYE CAMİ
+  static const String camiRizvaniye =
+      "assets/images/travels/camiler/rizvaniye/front.jpg";
+
+  // SELAHATTİN EYYUBİ  CAMİ
+  static const String camiSelahattin =
+      "assets/images/travels/camiler/selehattin_eyyubi/front.jpg";
+  static const String camiSelahattinOne =
+      "assets/images/travels/camiler/selehattin_eyyubi/one.jpg";
+  static const String camiSelahattinTwo =
+      "assets/images/travels/camiler/selehattin_eyyubi/two.jpg";
+  static const String camiSelahattinThree =
+      "assets/images/travels/camiler/selehattin_eyyubi/three.jpg";
+  static const String camiSelahattinFour =
+      "assets/images/travels/camiler/selehattin_eyyubi/four.jpg";
+
+  //  HASAN PAŞA   CAMİ
+  static const String camiHasan =
+      "assets/images/travels/camiler/hasan_pasa/front.jpg";
+  static const String camiHasanOne =
+      "assets/images/travels/camiler/hasan_pasa/one.png";
+  static const String camiHasanTwo =
+      "assets/images/travels/camiler/hasan_pasa/two.jpg";
+  static const String camiHasanThree =
+      "assets/images/travels/camiler/hasan_pasa/three.png";
+
+  //  FIRFIRLI On İki Havari Kilisesi Aziz Havariler Kilisesi  CAMİ
+  static const String camiFirfirli =
+      "assets/images/travels/camiler/firfirli/front.webp";
+  static const String camiFirfirliOne =
+      "assets/images/travels/camiler/firfirli/one.jpeg";
+  static const String camiFirfirliTwo =
+      "assets/images/travels/camiler/firfirli/two.jpeg";
+  static const String camiFirfirliThree =
+      "assets/images/travels/camiler/firfirli/three.jpeg";
+
+  //  YUSUF PAŞA  CAMİ
+  static const String camiYusuf =
+      "assets/images/travels/camiler/yusuf_pasa/front.jpg";
+  static const String camiYusufOne =
+      "assets/images/travels/camiler/yusuf_pasa/one.jpg";
+  static const String camiYusufTwo =
+      "assets/images/travels/camiler/yusuf_pasa/two.jpg";
+
+  // CİRCİS PEYGAMBER  CAMİ
+  static const String camiCircis =
+      "assets/images/travels/camiler/circis_peygamber/front.jpg";
+  static const String camiCircisOne =
+      "assets/images/travels/camiler/circis_peygamber/one.jpg";
+  static const String camiCircisTwo =
+      "assets/images/travels/camiler/circis_peygamber/two.jpg";
+
+  // HACI YADİGAR   CAMİ
+  static const String camiHaci =
+      "assets/images/travels/camiler/haci_yadigar/front.jpeg";
+  static const String camiHaciOne =
+      "assets/images/travels/camiler/haci_yadigar/one.jpeg";
+  static const String camiHaciTwo =
+      "assets/images/travels/camiler/haci_yadigar/two.jpeg";
+
+  // HARRAN ULU   CAMİ
+  static const String camiSanliurfa =
+      "assets/images/travels/camiler/harran_ulu/front.jpg";
+  static const String camiSanliurfaOne =
+      "assets/images/travels/camiler/harran_ulu/one.jpg";
+  static const String camiSanliurfaTwo =
+      "assets/images/travels/camiler/harran_ulu/two.jpg";
+  static const String camiSanliurfaThree =
+      "assets/images/travels/camiler/harran_ulu/three.webp";
+
+  // HÜSEYİN PAŞA  CAMİ
+  static const String camiHuseyin =
+      "assets/images/travels/camiler/huseyin_pasa/front.jpeg";
+  static const String camiHuseyinOne =
+      "assets/images/travels/camiler/huseyin_pasa/one.jpeg";
+  static const String camiHuseyinTwo =
+      "assets/images/travels/camiler/huseyin_pasa/two.jpeg";
+
+  /*  
+  //   CAMİ
+  static const String cami =
+      "assets/images/travels/camiler/halilur_rahman/front.jpg";
+  static const String camiOne =
+      "assets/images/travels/camiler/halilur_rahman/one.jpg";
+  static const String camiTwo =
+      "assets/images/travels/camiler/halilur_rahman/two.jpg"; 
+      
+      */
+
+  // KADIOĞLU  CAMİ
+  static const String camiKadioglu =
+      "assets/images/travels/camiler/kadioglu/front.jpg";
+  static const String camiKadiogluOne =
+      "assets/images/travels/camiler/kadioglu/one.jpg";
+
+  // KARA MUSA   CAMİ
+  static const String camiKaraMusa =
+      "assets/images/travels/camiler/kara_musa/front.jpeg";
+  static const String camiKaraMusaOne =
+      "assets/images/travels/camiler/kara_musa/one.jpeg";
+  static const String camiKaraMusaTwo =
+      "assets/images/travels/camiler/kara_musa/two.jpeg";
+  static const String camiKaraMusaThree =
+      "assets/images/travels/camiler/kara_musa/three.jpeg";
+
+  // KUDBETTİN CAMİ
+  static const String camiKudbettin =
+      "assets/images/travels/camiler/kudbettin/front.jpg";
+
+  // KUDBETTİN CAMİ
+  static const String camiMevlevihane =
+      "assets/images/travels/camiler/kudbettin/front.jpeg";
+
+  ///  TEXTS
   // TANITIM
   static const String textSanliurfa = "ŞANLIURFA";
 
