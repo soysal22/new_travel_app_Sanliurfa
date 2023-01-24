@@ -44,6 +44,7 @@ import 'package:gezi_app/core/widgets/responsive_card.dart';
 final List camiList = [
   "HALİLÜR RAHMAN CAMİ",
   "ULU CAMİ",
+  "EYYÜP PEYGAMBER CAMİ",
   "RIZVANİYE CAMİ",
   "SELAHATTİN EYYUBİ CAMİ",
   "HASAN PAŞA CAMİ",
@@ -62,6 +63,7 @@ final List camiList = [
 final List camiListImage = [
   Constants.camiHalilur,
   Constants.camiUlu,
+  Constants.camiEyyup,
   Constants.camiRizvaniye,
   Constants.camiSelahattin,
   Constants.camiHasan,

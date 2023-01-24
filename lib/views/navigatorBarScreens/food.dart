@@ -17,7 +17,9 @@ class _FoodPageState extends State<FoodPage> {
         centerTitle: true,
         title: const Text("Geleneksel Yemekler"),
       ),
-      body: const Center(child: Text("Welcome To Food Page ")),
+      body: Column(
+        children: [],
+      ),
     );
   }
 }
