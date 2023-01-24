@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 class MyScrollbar extends StatelessWidget {
@@ -9,7 +11,7 @@ class MyScrollbar extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(title: const Text('Scrollbar')),
       body: Scrollbar(
-        radius: Radius.circular(50),
+        radius: const Radius.circular(50),
         thumbVisibility: true, // scrollbar always visitable
         thickness: 20, // width of scrollbar
         showTrackOnHover: false,

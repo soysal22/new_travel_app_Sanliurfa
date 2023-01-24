@@ -49,7 +49,7 @@ class ResponsiveCard extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .headline6
-                ?.copyWith(color: Color.fromARGB(233, 255, 255, 255)),
+                ?.copyWith(color: const Color.fromARGB(233, 255, 255, 255)),
           ),
         ));
   }

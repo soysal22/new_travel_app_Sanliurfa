@@ -67,15 +67,20 @@ flutter:
   assets:
    - assets/images/info/
    - assets/images/tanitim/
+
+ # KLİSELER
    - assets/images/travels/kliseler/germus/
    - assets/images/travels/kliseler/reji/
    - assets/images/travels/kliseler/yakup_manastiri/
+
+# HANLAR
    - assets/images/travels/hanlar/barutcu/
    - assets/images/travels/hanlar/gumruk/
    - assets/images/travels/hanlar/haci_kamil/
    - assets/images/travels/hanlar/mencek/
    - assets/images/travels/hanlar/millet/
-
+   
+#  MÜZELER
    - assets/images/travels/museums/haleplibahce/
    - assets/images/travels/museums/kent/
    - assets/images/travels/museums/kurtulus/
@@ -84,9 +89,11 @@ flutter:
    - assets/images/travels/museums/tatlises/
    - assets/images/travels/museums/sanliurfa_muzesi/
 
+ # MEYDANLAR  
    - assets/images/travels/meydanlar/hasimiye/
    - assets/images/travels/meydanlar/ 
 
+# KONAKLAR 
    - assets/images/travels/konaklar/cevahir/
    - assets/images/travels/konaklar/elci/
    - assets/images/travels/konaklar/elruha/
@@ -97,7 +104,33 @@ flutter:
    - assets/images/travels/konaklar/sair_sakip/
    - assets/images/travels/konaklar/tbmm_evi/
    - assets/images/travels/konaklar/turkmen/    
-   - assets/images/travels/konaklar/vilayet/           
+   - assets/images/travels/konaklar/vilayet/
+       
+# CAMİLER  
+   - assets/images/travels/camiler/circis_peygamber/    
+   - assets/images/travels/camiler/firfirli/
+   - assets/images/travels/camiler/haci_yadigar/ 
+   - assets/images/travels/camiler/halilur_rahman/
+   - assets/images/travels/camiler/harran_ulu/
+   - assets/images/travels/camiler/hasan_pasa/
+   - assets/images/travels/camiler/huseyin_pasa/
+   - assets/images/travels/camiler/kadioglu/
+   - assets/images/travels/camiler/kara_musa/
+   - assets/images/travels/camiler/kutbeddin/
+   - assets/images/travels/camiler/mevlevihane/
+   - assets/images/travels/camiler/ulu/
+   - assets/images/travels/camiler/rizvaniye/
+   - assets/images/travels/camiler/selehattin_eyyubi/
+   - assets/images/travels/camiler/yusuf_pasa/
+   - assets/images/travels/camiler/eyyup_peygamber/
+
+   
+
+
+
+
+
+
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

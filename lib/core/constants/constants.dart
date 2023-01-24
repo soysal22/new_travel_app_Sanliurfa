@@ -378,13 +378,13 @@ class Constants {
       "assets/images/travels/camiler/haci_yadigar/two.jpeg";
 
   // HARRAN ULU   CAMİ
-  static const String camiSanliurfa =
+  static const String camiHarran =
       "assets/images/travels/camiler/harran_ulu/front.jpg";
-  static const String camiSanliurfaOne =
+  static const String camiHarranaOne =
       "assets/images/travels/camiler/harran_ulu/one.jpg";
-  static const String camiSanliurfaTwo =
+  static const String camiHarranTwo =
       "assets/images/travels/camiler/harran_ulu/two.jpg";
-  static const String camiSanliurfaThree =
+  static const String camiHarranThree =
       "assets/images/travels/camiler/harran_ulu/three.webp";
 
   // HÜSEYİN PAŞA  CAMİ
@@ -394,17 +394,6 @@ class Constants {
       "assets/images/travels/camiler/huseyin_pasa/one.jpeg";
   static const String camiHuseyinTwo =
       "assets/images/travels/camiler/huseyin_pasa/two.jpeg";
-
-  /*  
-  //   CAMİ
-  static const String cami =
-      "assets/images/travels/camiler/halilur_rahman/front.jpg";
-  static const String camiOne =
-      "assets/images/travels/camiler/halilur_rahman/one.jpg";
-  static const String camiTwo =
-      "assets/images/travels/camiler/halilur_rahman/two.jpg"; 
-      
-      */
 
   // KADIOĞLU  CAMİ
   static const String camiKadioglu =
@@ -424,11 +413,23 @@ class Constants {
 
   // KUDBETTİN CAMİ
   static const String camiKudbettin =
-      "assets/images/travels/camiler/kudbettin/front.jpg";
+      "assets/images/travels/camiler/kutbeddin/front.jpg";
 
   // KUDBETTİN CAMİ
   static const String camiMevlevihane =
-      "assets/images/travels/camiler/kudbettin/front.jpeg";
+      "assets/images/travels/camiler/mevlevihane/front.jpeg";
+
+  // EYYÜP PEYGAMBR  CAMİ
+  static const String camiEyyup =
+      "assets/images/travels/camiler/eyyup_peygamber/front.jpg";
+  static const String camiEyyupFrontt =
+      "assets/images/travels/camiler/eyyup_peygamber/frontt.jpg";
+  static const String camiEyyupOne =
+      "assets/images/travels/camiler/eyyup_peygamber/one.jpg";
+  static const String camiEyyupTwo =
+      "assets/images/travels/camiler/eyyup_peygamber/two.jpg";
+  static const String camiEyyupThree =
+      "assets/images/travels/camiler/eyyup_peygamber/three.jpg";
 
   ///  TEXTS
   // TANITIM

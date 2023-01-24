@@ -60,7 +60,21 @@ final List camiList = [
 ];
 
 final List camiListImage = [
-  Constants.clicheImageGermusFront,
+  Constants.camiHalilur,
+  Constants.camiUlu,
+  Constants.camiRizvaniye,
+  Constants.camiSelahattin,
+  Constants.camiHasan,
+  Constants.camiFirfirli,
+  Constants.camiYusuf,
+  Constants.camiCircis,
+  Constants.camiHaci,
+  Constants.camiHarran,
+  Constants.camiHuseyin,
+  Constants.camiKadioglu,
+  Constants.camiKaraMusa,
+  Constants.camiKudbettin,
+  Constants.camiMevlevihane,
 ];
 
 class Camiler extends StatelessWidget {
