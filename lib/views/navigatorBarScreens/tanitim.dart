@@ -69,7 +69,7 @@ class _TanitimPageState extends State<TanitimPage> {
     return AppBar(
       automaticallyImplyLeading: false,
       title: const Text(
-        "Şanlıurfa ",
+        "ŞANLIURFA",
         style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,

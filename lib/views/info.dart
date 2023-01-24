@@ -88,9 +88,8 @@ class _InfoState extends State<Info> {
             )),
         onPressed: () {
           setState(() {
-            prefs
-                ?.setBool('change', true)
-                .then((value) => Get.to(() => const BottomBarPageView()));
+            prefs?.setBool('change', true);
+            Get.to(() => const BottomBarPageView());
           });
         },
         child: const Icon(

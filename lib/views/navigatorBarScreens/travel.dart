@@ -90,7 +90,7 @@ class _TravelPageState extends State<TravelPage> with TickerProviderStateMixin {
       elevation: 0,
       automaticallyImplyLeading: false,
       centerTitle: true,
-      title: const Text("Gezilecek Yerler"),
+      title: const Text("GEZİLECEK YERLER"),
     );
   }
 

@@ -8,18 +8,28 @@ class FoodPage extends StatefulWidget {
 }
 
 class _FoodPageState extends State<FoodPage> {
+  final double _topPadding = 15;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        centerTitle: true,
-        title: const Text("Geleneksel Yemekler"),
+      appBar: _appbarDesign(),
+      body: Padding(
+        padding: EdgeInsets.only(top: _topPadding, left: 10, right: 10),
+        child: Column(
+          children: [],
+        ),
       ),
-      body: Column(
-        children: [],
-      ),
+    );
+  }
+
+  AppBar _appbarDesign() {
+    return AppBar(
+      elevation: 0,
+      automaticallyImplyLeading: false,
+      centerTitle: true,
+      title: const Text("YEMEKLER"),
     );
   }
 }
