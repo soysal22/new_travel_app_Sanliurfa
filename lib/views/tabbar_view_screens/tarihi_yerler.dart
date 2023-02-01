@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 final List tarihiYerlerList = [];
 
@@ -33,29 +32,69 @@ class _TarihiYerlerState extends State<TarihiYerler>
     Tab(child: Text('Bozova')),
     Tab(child: Text('CeylanPınar')),
   ];
+  @override
+  void initState() {
+    tabControllerTarihi =
+        TabController(length: tabbarListTarihi.length, vsync: this);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(top: _topPadding, left: 10, right: 10),
-      child: Column(
-        children: [
-          // for (int i = 0; i < tarihiYerlerList.length; i++)
-          //   ResponsiveCard(
-          //       image: tarihiYerlerListImage[i], title: tarihiYerlerList[i]),
+    return DefaultTabController(
+      length: tabbarListTarihi.length,
+      child: Padding(
+        padding: EdgeInsets.only(left: 10, right: 10),
+        child: Column(
+          children: [
+            // for (int i = 0; i < tarihiYerlerList.length; i++)
+            //   ResponsiveCard(
+            //       image: tarihiYerlerListImage[i], title: tarihiYerlerList[i]),
 
-          tabbarTarihiDesign(),
-          Expanded(
-            child: Padding(
-              padding: EdgeInsets.only(top: _topPadding),
-              child: TabBarView(
-                physics: const NeverScrollableScrollPhysics(),
-                controller: tabControllerTarihi,
-                children: const [],
+            tabbarTarihiDesign(),
+            Expanded(
+              child: Padding(
+                padding: EdgeInsets.only(top: _topPadding),
+                child: TabBarView(
+                  physics: const NeverScrollableScrollPhysics(),
+                  controller: tabControllerTarihi,
+                  children: const [
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                    Center(
+                      child: Text("data"),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

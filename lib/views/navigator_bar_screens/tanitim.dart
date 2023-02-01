@@ -3,6 +3,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
+import 'package:gezi_app/core/widgets/carosel.dart';
 
 final List imgList = [
   Constants.tanitimImageSanliurfa,
@@ -43,10 +44,10 @@ class _TanitimPageState extends State<TanitimPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //  Image  CarouselSlider kısmı
-            _imageCarouselSlider(),
+            // _imageCarouselSlider(),
             // circles sayfa page selectorları buradan ayarlıyoruz
-            _pageSelector(context),
-
+            // _pageSelector(context),
+            CaroselWidget(imgList: imgList, imgListName: imgListName),
             Constants.sizedBoxHeigh20,
             Text(Constants.textSanliurfa,
                 style: Theme.of(context).textTheme.headline4?.copyWith(

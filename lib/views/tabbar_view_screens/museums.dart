@@ -1,6 +1,12 @@
+// ignore_for_file: unused_local_variable
+
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
+import 'package:gezi_app/views/detail_page.dart';
 
 final List museumsList = [
   "ŞANLIURFA MÜZESİ ", // Şalıurfa arkeoloji müzesi ile aynı isme sahip
@@ -22,17 +28,34 @@ final List museumsListImage = [
   Constants.museumsMuslum,
 ];
 
+// final List museumsListImageDetail = [
+//   Constants.museumsSanliurfa,
+//   Constants.museumsSanliurfaOne,
+//   Constants.museumsSanliurfaTwo,
+//   Constants.museumsSanliurfaThree,
+// ];
+
 class Museums extends StatelessWidget {
   const Museums({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return ListView.builder(
+      itemCount: museumsList.length,
       shrinkWrap: true,
-      children: [
-        for (int i = 0; i < museumsList.length; i++)
-          ResponsiveCard(image: museumsListImage[i], title: museumsList[i]),
-      ],
+      itemBuilder: (context, index) {
+        return GestureDetector(
+            onTap: () {
+              log("basıldı abiiiii");
+
+              Get.to(DetailPage(
+                  imgList: museumsListImage,
+                  title: museumsList[index],
+                  subTitle: museumsList[index]));
+            },
+            child: ResponsiveCard(
+                image: museumsListImage[index], title: museumsList[index]));
+      },
     );
   }
 }
