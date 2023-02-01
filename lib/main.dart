@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/views/bottombar_page.dart';
-import 'package:gezi_app/views/info.dart';
 import 'package:gezi_app/views/splash_page.dart';
 
 void main() {

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 final List museumsList = [
@@ -31,7 +30,6 @@ class Museums extends StatelessWidget {
     return ListView(
       shrinkWrap: true,
       children: [
-        CategoryTitle(title: "MÜZELER"),
         for (int i = 0; i < museumsList.length; i++)
           ResponsiveCard(image: museumsListImage[i], title: museumsList[i]),
       ],

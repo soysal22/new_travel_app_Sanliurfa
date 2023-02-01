@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 final List hanlarList = [
@@ -32,7 +31,6 @@ class Hanlar extends StatelessWidget {
     return ListView(
       shrinkWrap: true,
       children: [
-        CategoryTitle(title: "HANLAR"),
         for (int i = 0; i < hanlarList.length; i++)
           ResponsiveCard(image: hanlarListImage[i], title: hanlarList[i]),
       ],

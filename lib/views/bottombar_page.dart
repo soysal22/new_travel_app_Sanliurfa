@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/views/navigatorBarScreens/food.dart';
-import 'package:gezi_app/views/navigatorBarScreens/settings.dart';
-import 'package:gezi_app/views/navigatorBarScreens/tanitim.dart';
-import 'package:gezi_app/views/navigatorBarScreens/travel.dart';
+import 'package:gezi_app/views/navigator_bar_screens/food.dart';
+import 'package:gezi_app/views/navigator_bar_screens/settings.dart';
+import 'package:gezi_app/views/navigator_bar_screens/tanitim.dart';
+import 'package:gezi_app/views/navigator_bar_screens/travel.dart';
 
 class BottomBarPageView extends StatefulWidget {
   const BottomBarPageView({super.key});

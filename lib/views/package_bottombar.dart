@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gezi_app/views/navigatorBarScreens/food.dart';
-import 'package:gezi_app/views/navigatorBarScreens/settings.dart';
-import 'package:gezi_app/views/navigatorBarScreens/tanitim.dart';
-import 'package:gezi_app/views/navigatorBarScreens/travel.dart';
+import 'package:gezi_app/views/navigator_bar_screens/food.dart';
+import 'package:gezi_app/views/navigator_bar_screens/settings.dart';
+import 'package:gezi_app/views/navigator_bar_screens/tanitim.dart';
+import 'package:gezi_app/views/navigator_bar_screens/travel.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class BottomBarNewPageView extends StatefulWidget {

@@ -18,7 +18,7 @@ class _FoodPageState extends State<FoodPage> {
       body: Padding(
         padding: EdgeInsets.only(top: _topPadding, left: 10, right: 10),
         child: Column(
-          children: [],
+          children: const [],
         ),
       ),
     );

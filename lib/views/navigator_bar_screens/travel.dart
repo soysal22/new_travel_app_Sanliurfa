@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/views/tabbarViewScreens/camiler.dart';
-import 'package:gezi_app/views/tabbarViewScreens/hanlar.dart';
-import 'package:gezi_app/views/tabbarViewScreens/klise.dart';
-import 'package:gezi_app/views/tabbarViewScreens/konaklar.dart';
-import 'package:gezi_app/views/tabbarViewScreens/meydanlar.dart';
-import 'package:gezi_app/views/tabbarViewScreens/museums.dart';
-import 'package:gezi_app/views/tabbarViewScreens/tarihi_yerler.dart';
+import 'package:gezi_app/views/tabbar_view_screens/camiler.dart';
+import 'package:gezi_app/views/tabbar_view_screens/hanlar.dart';
+import 'package:gezi_app/views/tabbar_view_screens/klise.dart';
+import 'package:gezi_app/views/tabbar_view_screens/konaklar.dart';
+import 'package:gezi_app/views/tabbar_view_screens/meydanlar.dart';
+import 'package:gezi_app/views/tabbar_view_screens/museums.dart';
+import 'package:gezi_app/views/tabbar_view_screens/tarihi_yerler.dart';
 
 class TravelPage extends StatefulWidget {
   const TravelPage({super.key});

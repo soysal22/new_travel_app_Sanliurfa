@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/core/widgets/category_title.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
 
 // rızvaniye cami balıklıgölün karşı tarafındaki cami
@@ -87,7 +86,6 @@ class Camiler extends StatelessWidget {
     return ListView(
       shrinkWrap: true,
       children: [
-        CategoryTitle(title: "CAMİLER"),
         for (int i = 0; i < camiList.length; i++)
           ResponsiveCard(image: camiListImage[i], title: camiList[i]),
       ],
