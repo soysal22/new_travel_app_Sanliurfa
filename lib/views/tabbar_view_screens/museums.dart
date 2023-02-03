@@ -103,48 +103,20 @@ class Museums extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: museumsList.length,
-      shrinkWrap: true,
-      itemBuilder: (context, index) {
-        return StreamBuilder<Object>(
-            stream: null,
-            builder: (context, snapshot) {
-              return ResponsiveCard(
-                  OnPressed: () {
-                    log("basıldı abiiiii");
+        itemCount: museumsList.length,
+        shrinkWrap: true,
+        itemBuilder: (context, index) {
+          return ResponsiveCard(
+              OnPressed: () {
+                log("basıldı abiiiii");
 
-                    Get.to(() => DetailPage(
-                        caroselImageList: caroselListsMuseums[index],
-                        title: museumsList[index],
-                        subTitle: museumsList[index]));
-                  },
-                  image: museumsListImage[index],
-                  title: museumsList[index]);
-            });
-      },
-    );
+                Get.to(() => DetailPage(
+                    caroselImageList: caroselListsMuseums[index],
+                    title: museumsList[index],
+                    subTitle: museumsList[index]));
+              },
+              image: museumsListImage[index],
+              title: museumsList[index]);
+        });
   }
 }
-
-// imageListeCek(int index) {
-//   switch (index) {
-//     case 0:
-//       return museumsListImageDetailSanliurfa;
-//     case 1:
-//       return museumsListImageDetailTatlises;
-//     case 2:
-//       return museumsListImageDetailHalepli;
-//     case 3:
-//       return museumsListImageDetailKent;
-//     case 4:
-//       return museumsListImageDetailKurtulus;
-//     case 5:
-//       return museumsListImageDetailMutfak;
-//     case 6:
-//       return museumsListImageDetailMuslum;
-//     case 7:
-//       return museumsListImageDetailOyun;
-
-//     default:
-//   }
-// }

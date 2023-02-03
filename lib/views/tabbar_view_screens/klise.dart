@@ -15,32 +15,32 @@ final List kliseList = [
 final List kliseListImage = [
   Constants.clicheImageGermus,
   Constants.clicheImageReji,
-  Constants.clicheImageYakup
+  Constants.clicheYakup
 ];
 
-final List clicheImageGermus = [
+final List clicheGermus = [
   Constants.clicheImageGermus,
   Constants.clicheImageGermusOne,
   Constants.clicheImageGermusTwo,
   Constants.clicheImageGermusThree,
 ];
 
-final List clicheImageReji = [
+final List clicheReji = [
   Constants.clicheImageReji,
   Constants.clicheImageRejiOne,
   Constants.clicheImageRejiTwo,
 ];
 
-final List clicheImageYakup = [
-  Constants.clicheImageYakup,
-  Constants.clicheImageYakupOne,
-  Constants.clicheImageYakupTwo,
+final List clicheYakup = [
+  Constants.clicheYakup,
+  Constants.clicheYakupOne,
+  Constants.clicheYakupTwo,
 ];
 
-final List caroselImageCliche = [
-  Constants.clicheImageYakup,
-  Constants.clicheImageYakupOne,
-  Constants.clicheImageYakupTwo,
+final List caroselListsCliche = [
+  clicheGermus,
+  clicheReji,
+  clicheYakup,
 ];
 
 class Kliseler extends StatelessWidget {
@@ -48,22 +48,22 @@ class Kliseler extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return ListView.builder(
       shrinkWrap: true,
-      children: [
-        for (int i = 0; i < kliseList.length; i++)
-          ResponsiveCard(
-              OnPressed: () {
-                log("basıldı abiiiii");
+      itemCount: kliseList.length,
+      itemBuilder: (context, index) {
+        return ResponsiveCard(
+            OnPressed: () {
+              log("basıldı abiiiii");
 
-                Get.to(() => DetailPage(
-                    caroselImageList: caroselImageCliche[i],
-                    title: kliseList[i],
-                    subTitle: kliseList[i]));
-              },
-              image: kliseListImage[i],
-              title: kliseList[i]),
-      ],
+              Get.to(() => DetailPage(
+                  caroselImageList: caroselListsCliche[index],
+                  title: kliseList[index],
+                  subTitle: kliseList[index]));
+            },
+            image: kliseListImage[index],
+            title: kliseList[index]);
+      },
     );
   }
 }

@@ -1,6 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:gezi_app/core/constants/constants.dart';
 import 'package:gezi_app/core/widgets/responsive_card.dart';
+import 'package:gezi_app/views/detail_page.dart';
 
 // rızvaniye cami balıklıgölün karşı tarafındaki cami
 // mevlidi halil cami halilur rahman ile aynı isme sahip
@@ -51,7 +55,6 @@ final List camiList = [
   "YUSUF PAŞA CAMİ",
   "CİRCİS PEYGAMBER CAMİ",
   "HACI YADİGAR CAMİ",
-  "HARRAN ULU CAMİ",
   "HÜSEYİN PAŞA CAMİ",
   "KADIOĞLU CAMİ",
   "KARA MUSA CAMİ",
@@ -70,7 +73,6 @@ final List camiListImage = [
   Constants.camiYusuf,
   Constants.camiCircis,
   Constants.camiHaci,
-  Constants.camiHarran,
   Constants.camiHuseyin,
   Constants.camiKadioglu,
   Constants.camiKaraMusa,
@@ -78,17 +80,136 @@ final List camiListImage = [
   Constants.camiMevlevihane,
 ];
 
+final List camiHalilur = [
+  Constants.camiHalilur,
+  Constants.camiHalilurOne,
+  Constants.camiHalilurTwo,
+];
+
+final List camiUlu = [
+  Constants.camiUlu,
+  Constants.camiUluOne,
+  Constants.camiUluTwo,
+  Constants.camiUluThree,
+  Constants.camiUluFour,
+];
+
+final List camiEyyup = [
+  Constants.camiEyyup,
+  Constants.camiEyyupOne,
+  Constants.camiEyyupTwo,
+  Constants.camiEyyupThree,
+  Constants.camiEyyupFour,
+];
+
+final List camiRizvaniye = [
+  Constants.camiRizvaniye,
+];
+
+final List camiSelahattin = [
+  Constants.camiSelahattin,
+  Constants.camiSelahattinOne,
+  Constants.camiSelahattinTwo,
+  Constants.camiSelahattinThree,
+  Constants.camiSelahattinFour,
+];
+
+final List camiHasan = [
+  Constants.camiHasan,
+  Constants.camiHasanOne,
+  Constants.camiHasanTwo,
+  Constants.camiHasanThree,
+];
+
+final List camiFirfirli = [
+  Constants.camiFirfirli,
+  Constants.camiFirfirliOne,
+  Constants.camiFirfirliTwo,
+  Constants.camiFirfirli,
+];
+
+final List camiYusuf = [
+  Constants.camiYusuf,
+  Constants.camiYusufOne,
+  Constants.camiYusufTwo,
+];
+
+final List camiCircis = [
+  Constants.camiCircis,
+  Constants.camiCircisOne,
+  Constants.camiCircisTwo,
+];
+
+final List camiHaci = [
+  Constants.camiHaci,
+  Constants.camiHaciOne,
+  Constants.camiHaciTwo,
+];
+
+final List camiHuseyin = [
+  Constants.camiHuseyin,
+  Constants.camiHuseyinOne,
+  Constants.camiHuseyinTwo,
+];
+
+final List camiKadioglu = [
+  Constants.camiKadioglu,
+  Constants.camiKadiogluOne,
+];
+
+final List camiKaraMusa = [
+  Constants.camiKaraMusa,
+  Constants.camiKaraMusaOne,
+  Constants.camiKaraMusaTwo,
+  Constants.camiKaraMusaThree,
+];
+
+final List camiKudbettin = [
+  Constants.camiKudbettin,
+];
+
+final List camiMevlevihane = [
+  Constants.camiMevlevihane,
+];
+final List caroselListsCamiler = [
+  camiHalilur,
+  camiUlu,
+  camiEyyup,
+  camiRizvaniye,
+  camiSelahattin,
+  camiHasan,
+  camiFirfirli,
+  camiYusuf,
+  camiCircis,
+  camiHaci,
+  camiHuseyin,
+  camiKadioglu,
+  camiKaraMusa,
+  camiKudbettin,
+  camiMevlevihane,
+];
+
 class Camiler extends StatelessWidget {
   const Camiler({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return ListView.builder(
       shrinkWrap: true,
-      children: [
-        for (int i = 0; i < camiList.length; i++)
-          ResponsiveCard(image: camiListImage[i], title: camiList[i]),
-      ],
+      itemCount: camiList.length,
+      itemBuilder: (context, index) {
+        return ResponsiveCard(
+            OnPressed: () {
+              log("basıldı abiiiii");
+
+              Get.to(() => DetailPage(
+                  caroselImageList: caroselListsCamiler[index],
+                  title: camiList[index],
+                  subTitle: camiList[index]));
+            },
+            image: camiListImage[index],
+            title: camiList[index]);
+      },
     );
   }
 }

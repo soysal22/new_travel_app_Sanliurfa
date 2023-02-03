@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/core/widgets/carosel.dart';
+import 'package:gezi_app/core/widgets/carossel_detail.dart';
 
 class DetailPage extends StatelessWidget {
   DetailPage({
@@ -43,7 +43,7 @@ class DetailPage extends StatelessWidget {
         padding: const EdgeInsets.only(top: 30),
         child: Column(
           children: [
-            CaroselWidgetAndSelector(imgList: caroselImageList),
+            DetailCaroselWidgetAndSelector(imgList: caroselImageList),
             Constants.sizedBoxHeigh20,
             Text(
               title,
