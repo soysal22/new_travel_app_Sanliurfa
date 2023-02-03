@@ -8,15 +8,16 @@ import 'package:gezi_app/core/widgets/carosel.dart';
 class DetailPage extends StatelessWidget {
   DetailPage({
     super.key,
-    required this.imgList,
+    required this.caroselImageList,
     required this.title,
     required this.subTitle,
   });
 
-  List imgList;
+  List caroselImageList;
 
   String title;
   String subTitle;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,19 +26,24 @@ class DetailPage extends StatelessWidget {
         elevation: 0,
         backgroundColor: Constants.colorTranspartent,
         automaticallyImplyLeading: false,
-        leading: IconButton(
-            onPressed: Get.back,
-            icon: Icon(
-              Icons.arrow_back,
-              color: Constants.colorBlack,
-              size: 30,
-            )),
+        title: Container(
+          decoration: BoxDecoration(
+              color: Constants.colorRed,
+              borderRadius: BorderRadius.circular(10)),
+          child: IconButton(
+              onPressed: Get.back,
+              icon: const Icon(
+                Icons.arrow_back_sharp,
+                color: Constants.colorBlack,
+                size: 30,
+              )),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 30),
         child: Column(
           children: [
-            CaroselWidget(imgList: imgList),
+            CaroselWidgetAndSelector(imgList: caroselImageList),
             Constants.sizedBoxHeigh20,
             Text(
               title,

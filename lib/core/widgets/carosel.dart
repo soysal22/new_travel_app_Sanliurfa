@@ -3,8 +3,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class CaroselWidget extends StatefulWidget {
-  CaroselWidget({
+class CaroselWidgetAndSelector extends StatefulWidget {
+  CaroselWidgetAndSelector({
     super.key,
     required this.imgList,
     this.imgListName,
@@ -12,13 +12,14 @@ class CaroselWidget extends StatefulWidget {
   List imgList;
   List? imgListName;
   @override
-  State<CaroselWidget> createState() => _CaroselWidgetState();
+  State<CaroselWidgetAndSelector> createState() =>
+      _CaroselWidgetAndSelectorState();
 }
 
 int _current = 0;
 final CarouselController _controller = CarouselController();
 
-class _CaroselWidgetState extends State<CaroselWidget> {
+class _CaroselWidgetAndSelectorState extends State<CaroselWidgetAndSelector> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,6 +27,7 @@ class _CaroselWidgetState extends State<CaroselWidget> {
         CarouselSlider(
           carouselController: _controller,
           options: CarouselOptions(
+              // height: 600,
               autoPlay: true,
               aspectRatio: 2.0,
               enlargeCenterPage: true,
@@ -49,7 +51,7 @@ class _CaroselWidgetState extends State<CaroselWidget> {
                       borderRadius: BorderRadius.circular(10),
                       child: Stack(
                         children: <Widget>[
-                          Image.asset(item, fit: BoxFit.cover, width: 1000.0),
+                          Image.asset(item, fit: BoxFit.cover, width: 500.0),
                           Positioned(
                             bottom: 0.0,
                             left: 0.0,
@@ -66,7 +68,7 @@ class _CaroselWidgetState extends State<CaroselWidget> {
                                       // resimler gibi alttaki yazılarda onunla beraber anlık olarak değişsin diye  gelen item ın int değerine eşitledim
                                       style: const TextStyle(
                                         color: Colors.white,
-                                        fontSize: 20.0,
+                                        fontSize: 22.0,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
@@ -98,52 +100,10 @@ class _CaroselWidgetState extends State<CaroselWidget> {
                 color: (Theme.of(context).brightness == Brightness.dark
                         ? Colors.white
                         : Colors.black)
-                    .withOpacity(_current == entry.key ? 0.9 : 0.4)),
+                    .withOpacity(_current == entry.key ? 1 : 0.4)),
           ),
         );
       }).toList(),
     );
   }
-
-  // List<Widget> imageSliders = widget.imgList
-  //     .map((item) => Container(
-  //           decoration: BoxDecoration(
-  //             borderRadius: BorderRadius.circular(10),
-  //             boxShadow: [
-  //               BoxShadow(
-  //                 blurRadius: 10.0,
-  //                 color: Colors.grey.shade700,
-  //               )
-  //             ],
-  //           ),
-  //           child: ClipRRect(
-  //             borderRadius: BorderRadius.circular(10),
-  //             child: Stack(
-  //               children: <Widget>[
-  //                 Image.asset(item, fit: BoxFit.cover, width: 1000.0),
-  //                 Positioned(
-  //                   bottom: 0.0,
-  //                   left: 0.0,
-  //                   right: 0.0,
-  //                   child: Container(
-  //                     padding: const EdgeInsets.symmetric(
-  //                         vertical: 10.0, horizontal: 20.0),
-  //                     child: Text(
-  //                       widget
-  //                           .imgListName[widget.imgList.indexOf(item).toInt()],
-  //                       // gelen resim değerinin int karşılığı olan 1 2 gibi sayısal bir değer olsun ki
-  //                       // resimler gibi alttaki yazılarda onunla beraber anlık olarak değişsin diye  gelen item ın int değerine eşitledim
-  //                       style: const TextStyle(
-  //                         color: Colors.white,
-  //                         fontSize: 20.0,
-  //                         fontWeight: FontWeight.bold,
-  //                       ),
-  //                     ),
-  //                   ),
-  //                 ),
-  //               ],
-  //             ),
-  //           ),
-  //         ))
-  //     .toList();
 }

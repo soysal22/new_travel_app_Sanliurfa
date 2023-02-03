@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:gezi_app/core/constants/constants.dart';
-import 'package:gezi_app/views/bottombar_page.dart';
-import 'package:gezi_app/views/navigator_bar_screens/tanitim.dart';
-import 'package:gezi_app/views/splash_page.dart';
 import 'package:gezi_app/views/tabbar_view_screens/museums.dart';
 
 void main() {

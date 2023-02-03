@@ -31,41 +31,40 @@ class Constants {
 
   // KLİSELER ( CLİCHES )
   //Germuş
+
   static const String clicheImageGermus =
-      "assets/images/travels/kliseler/germus/germus.jpg";
-  static const String clicheImageGermusFront =
       "assets/images/travels/kliseler/germus/front.jpg";
-  static const String clicheImageGermusIci =
-      "assets/images/travels/kliseler/germus/ici.jpg";
-  static const String clicheImageGermusYan =
-      "assets/images/travels/kliseler/germus/yan.jpg";
+  static const String clicheImageGermusOne =
+      "assets/images/travels/kliseler/germus/one.jpg";
+  static const String clicheImageGermusTwo =
+      "assets/images/travels/kliseler/germus/two.jpg";
+  static const String clicheImageGermusThree =
+      "assets/images/travels/kliseler/germus/three.jpg";
 
   // Reji Klisesi
   static const String clicheImageReji =
-      "assets/images/travels/kliseler/reji/garden.jpg";
-  static const String clicheImageRejiFront =
       "assets/images/travels/kliseler/reji/front.jpg";
-  static const String clicheImageRejiIn =
-      "assets/images/travels/kliseler/reji/in.jpg";
-  static const String clicheImageRejiOn =
-      "assets/images/travels/kliseler/reji/on.jpg";
+  static const String clicheImageRejiOne =
+      "assets/images/travels/kliseler/reji/one.jpg";
+  static const String clicheImageRejiTwo =
+      "assets/images/travels/kliseler/reji/two.jpg";
 
   // Yakup Manastırı
   static const String clicheImageYakup =
       "assets/images/travels/kliseler/yakup_manastiri/front.jpg";
-  static const String clicheImageYakupCastle =
-      "assets/images/travels/kliseler/yakup_manastiri/castle.jpg";
-  static const String clicheImageYakupOn =
-      "assets/images/travels/kliseler/yakup_manastiri/on.jpg";
+  static const String clicheImageYakupOne =
+      "assets/images/travels/kliseler/yakup_manastiri/one.jpg";
+  static const String clicheImageYakupTwo =
+      "assets/images/travels/kliseler/yakup_manastiri/two.jpg";
 
   /// HANLAR
 
   // GÜMRÜK HANI
 
   static const String hanlarGumrukOne =
-      "assets/images/travels/hanlar/gumruk/gumruk.jpg";
+      "assets/images/travels/hanlar/gumruk/one.jpg";
   static const String hanlarGumruktwo =
-      "assets/images/travels/hanlar/gumruk/gumruk_two.jpg";
+      "assets/images/travels/hanlar/gumruk/two.jpg";
 
   // BARUTÇU HANI
 
@@ -137,12 +136,13 @@ class Constants {
 
   static const String museumsKent =
       "assets/images/travels/museums/kent/front.jpeg";
-  static const String museumsKentOn =
-      "assets/images/travels/museums/kent/on.jpg";
+
   static const String museumsKentOne =
       "assets/images/travels/museums/kent/one.jpg";
   static const String museumsKentTwo =
       "assets/images/travels/museums/kent/two.jpg";
+  static const String museumsKentThree =
+      "assets/images/travels/museums/kent/three.jpg";
 
   // KURTULUŞ MÜZESİ
 
@@ -175,8 +175,19 @@ class Constants {
       "assets/images/travels/museums/muslum_baba/two.jpg";
   static const String museumsMuslumThree =
       "assets/images/travels/museums/muslum_baba/three.jpg";
-  static const String museumsMuslumfour =
+  static const String museumsMuslumFour =
       "assets/images/travels/museums/muslum_baba/four.jpg";
+
+  //  OYUN VE OYUNCAK  MÜZESİ
+
+  static const String museumsOyun =
+      "assets/images/travels/museums/oyun_oyuncak/front.jpg";
+  static const String museumsOyunOne =
+      "assets/images/travels/museums/oyun_oyuncak/one.jpg";
+  static const String museumsOyunTwo =
+      "assets/images/travels/museums/oyun_oyuncak/two.jpg";
+  static const String museumsOyunThree =
+      "assets/images/travels/museums/oyun_oyuncak/three.jpg";
 
   /// MEYDANLAR
 

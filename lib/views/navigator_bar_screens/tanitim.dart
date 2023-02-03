@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types
+// ignore_for_file: camel_case_types, unused_element
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -43,11 +43,8 @@ class _TanitimPageState extends State<TanitimPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            //  Image  CarouselSlider kısmı
-            // _imageCarouselSlider(),
-            // circles sayfa page selectorları buradan ayarlıyoruz
-            // _pageSelector(context),
-            CaroselWidget(imgList: imgList, imgListName: imgListName),
+            CaroselWidgetAndSelector(
+                imgList: imgList, imgListName: imgListName),
             Constants.sizedBoxHeigh20,
             Text(Constants.textSanliurfa,
                 style: Theme.of(context).textTheme.headline4?.copyWith(

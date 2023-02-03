@@ -4,7 +4,7 @@ import 'package:gezi_app/core/constants/constants.dart';
 final List tarihiYerlerList = [];
 
 final List tarihiYerlerListImage = [
-  Constants.clicheImageGermusFront,
+  Constants.clicheImageGermus,
 ];
 
 class TarihiYerler extends StatefulWidget {
@@ -44,7 +44,7 @@ class _TarihiYerlerState extends State<TarihiYerler>
     return DefaultTabController(
       length: tabbarListTarihi.length,
       child: Padding(
-        padding: EdgeInsets.only(left: 10, right: 10),
+        padding: const EdgeInsets.only(left: 10, right: 10),
         child: Column(
           children: [
             // for (int i = 0; i < tarihiYerlerList.length; i++)
